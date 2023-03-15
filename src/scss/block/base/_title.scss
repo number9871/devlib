@@ -1,0 +1,37 @@
+.title {
+    color: var(--font-main);
+    margin: 0;
+    &_h1 {
+        font-weight: 600;
+        font-size: 41px;
+        line-height: 110%;
+    }
+    &_h2 {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 118%;
+    }
+    &_h3 {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 115%;
+    }
+    &_h4 {
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 125%;
+    }
+    &_h5 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+    }
+    &_h6 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+    }
+    &_light {
+        color: var(--font-light);
+    }
+}

@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevLib Vacancy</title>
+    <link rel="stylesheet" href="css/style.min.css">
+	<script src="js/vue.global.js"></script>
+	<script src="js/vue-select.umd.js"></script>
+    
+</head>
+<body>
+    //=include templates/base/header.html
+	<div class="overlay" id="commentImageOverlay"></div>
+	<img src="img/main/cat.jpg" class="modal comments__list__item__img_modal" id="commentImageModal" alt="">
+    <div class="page">
+        //=include templates/base/menu.html
+        <section class="test">
+			<div class="container container_col">
+				<div class="test__main bg">
+					<div class="test__main__header">
+						<div class="vacancies__feed__item__owner">
+							<div class="vacancies__feed__item__owner__img">
+								<img src="icons/general/vacancies/company.png" alt="">
+							</div>
+							<div class="vacancies__feed__item__owner__name">DevOps Life Cycle</div>
+							<div class="vacancies__feed__item__owner__time">3 июля 2021</div>
+							<div class="dots__dropdown__wrapper" tabindex="-1">
+								<div class="vacancies__feed__item__owner__more">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M1.66626 10C1.66626 9.55798 1.84185 9.13406 2.15442 8.8215C2.46698 8.50894 2.8909 8.33334 3.33293 8.33334C3.77495 8.33334 4.19888 8.50894 4.51144 8.8215C4.824 9.13406 4.99959 9.55798 4.99959 10C4.99959 10.442 4.824 10.866 4.51144 11.1785C4.19888 11.4911 3.77495 11.6667 3.33293 11.6667C2.8909 11.6667 2.46698 11.4911 2.15442 11.1785C1.84185 10.866 1.66626 10.442 1.66626 10Z" fill="#9F9FA9"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33276 10C8.33276 9.55798 8.50836 9.13406 8.82092 8.8215C9.13348 8.50894 9.5574 8.33334 9.99943 8.33334C10.4415 8.33334 10.8654 8.50894 11.1779 8.8215C11.4905 9.13406 11.6661 9.55798 11.6661 10C11.6661 10.442 11.4905 10.866 11.1779 11.1785C10.8654 11.4911 10.4415 11.6667 9.99943 11.6667C9.5574 11.6667 9.13348 11.4911 8.82092 11.1785C8.50836 10.866 8.33276 10.442 8.33276 10Z" fill="#9F9FA9"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9995 10C14.9995 9.55798 15.1751 9.13406 15.4877 8.8215C15.8002 8.50894 16.2242 8.33334 16.6662 8.33334C17.1082 8.33334 17.5321 8.50894 17.8447 8.8215C18.1572 9.13406 18.3328 9.55798 18.3328 10C18.3328 10.442 18.1572 10.866 17.8447 11.1785C17.5321 11.4911 17.1082 11.6667 16.6662 11.6667C16.2242 11.6667 15.8002 11.4911 15.4877 11.1785C15.1751 10.866 14.9995 10.442 14.9995 10Z" fill="#9F9FA9"/>
+									</svg> 
+								</div>
+								<div class="dots__dropdown">
+									<div class="dots__dropdown__item">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.2867 8.71336C10.6041 8.03106 9.67846 7.64777 8.71334 7.64777C7.74821 7.64777 6.82259 8.03106 6.14 8.71336L3.56584 11.2867C2.88324 11.9693 2.49976 12.8951 2.49976 13.8604C2.49976 14.8258 2.88324 15.7516 3.56584 16.4342C4.24844 17.1168 5.17424 17.5003 6.13959 17.5003C7.10493 17.5003 8.03074 17.1168 8.71334 16.4342L10 15.1475" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M8.71338 11.2867C9.39597 11.969 10.3216 12.3523 11.2867 12.3523C12.2518 12.3523 13.1775 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5003 7.10493 17.5003 6.13959C17.5003 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8258 2.49976 13.8605 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L10 4.8525" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										<span>Скопировать ссылку</span>
+									</div>
+									<div class="dots__dropdown__item">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.33337 4.16667V16.3217C3.33337 17.0633 4.23087 17.4358 4.75587 16.9108L10 11.6667L15.2442 16.9108C15.7692 17.4358 16.6667 17.0642 16.6667 16.3217V4.16667C16.6667 3.72464 16.4911 3.30072 16.1786 2.98816C15.866 2.67559 15.4421 2.5 15 2.5H5.00004C4.55801 2.5 4.13409 2.67559 3.82153 2.98816C3.50897 3.30072 3.33337 3.72464 3.33337 4.16667V4.16667Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										<span>В закладки</span>	
+									</div>
+									<div class="dots__dropdown__item">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_2320_24025)">
+											<path d="M9.99996 18.3334C14.6023 18.3334 18.3333 14.6024 18.3333 10C18.3333 5.39765 14.6023 1.66669 9.99996 1.66669C5.39759 1.66669 1.66663 5.39765 1.66663 10C1.66663 14.6024 5.39759 18.3334 9.99996 18.3334Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M10 13.75V14.1666M10 5.83331V10.8333V5.83331Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</g>
+											<defs>
+											<clipPath id="clip0_2320_24025">
+											<rect width="20" height="20" fill="white"/>
+											</clipPath>
+											</defs>
+											</svg>
+										<span>Пожаловаться</span>	
+									</div>
+								</div>
+							</div>                                       
+						</div>
+						<h1 class="title title_h1">Пройдите тест на знание Java</h1>
+                        <div class="test__main__header__text">Настало время проверить уровень ваших практических навыков в Java. Пройдите наш тест и узнайте, насколько хорошо вы владеете этим популярным языком программирования.</div>
+						<div class="card__action">
+                            <div class="card__action__wrapper card__action__wrapper_left">
+                                <a href="#" class="card__action__views">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M17.7142 9.13484C18.1092 9.6515 18.1092 10.349 17.7142 10.8648C16.47 12.489 13.485 15.8332 9.99999 15.8332C6.51499 15.8332 3.52999 12.489 2.28582 10.8648C2.09364 10.6174 1.98932 10.3131 1.98932 9.99984C1.98932 9.68657 2.09364 9.38223 2.28582 9.13484C3.52999 7.51067 6.51499 4.1665 9.99999 4.1665C13.485 4.1665 16.47 7.51067 17.7142 9.13484V9.13484Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>5369</span>
+								</a>
+                                <a href="#" class="card__action__comment">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>64</span>
+                                </a>
+                                <a href="#" class="card__action__bookmarks">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>	
+                                    <span>21</span>	
+                                </a>
+                            </div>
+                            <div class="card__action__wrapper card__action__wrapper_right">
+                                <a href="#" class="card__action__rep_down">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <div class="card__action__rep-count">123</div>
+                                <a href="#" class="card__action__rep_up">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+					</div>
+					<button class="btn btn_large">Начать тест</button>
+					<div class="test__main__img"><img src="img/main/java.png" alt=""></div>
+				</div>
+				<div class="test__main bg">
+					<div class="test__main__header">
+						<div class="vacancies__feed__item__owner">
+							<div class="vacancies__feed__item__owner__img">
+								<img src="icons/general/vacancies/company.png" alt="">
+							</div>
+							<div class="vacancies__feed__item__owner__name">DevOps Life Cycle</div>
+							<div class="vacancies__feed__item__owner__time">3 июля 2021</div>
+							<div class="dots__dropdown__wrapper" tabindex="-1">
+								<div class="vacancies__feed__item__owner__more">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M1.66626 10C1.66626 9.55798 1.84185 9.13406 2.15442 8.8215C2.46698 8.50894 2.8909 8.33334 3.33293 8.33334C3.77495 8.33334 4.19888 8.50894 4.51144 8.8215C4.824 9.13406 4.99959 9.55798 4.99959 10C4.99959 10.442 4.824 10.866 4.51144 11.1785C4.19888 11.4911 3.77495 11.6667 3.33293 11.6667C2.8909 11.6667 2.46698 11.4911 2.15442 11.1785C1.84185 10.866 1.66626 10.442 1.66626 10Z" fill="#9F9FA9"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33276 10C8.33276 9.55798 8.50836 9.13406 8.82092 8.8215C9.13348 8.50894 9.5574 8.33334 9.99943 8.33334C10.4415 8.33334 10.8654 8.50894 11.1779 8.8215C11.4905 9.13406 11.6661 9.55798 11.6661 10C11.6661 10.442 11.4905 10.866 11.1779 11.1785C10.8654 11.4911 10.4415 11.6667 9.99943 11.6667C9.5574 11.6667 9.13348 11.4911 8.82092 11.1785C8.50836 10.866 8.33276 10.442 8.33276 10Z" fill="#9F9FA9"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9995 10C14.9995 9.55798 15.1751 9.13406 15.4877 8.8215C15.8002 8.50894 16.2242 8.33334 16.6662 8.33334C17.1082 8.33334 17.5321 8.50894 17.8447 8.8215C18.1572 9.13406 18.3328 9.55798 18.3328 10C18.3328 10.442 18.1572 10.866 17.8447 11.1785C17.5321 11.4911 17.1082 11.6667 16.6662 11.6667C16.2242 11.6667 15.8002 11.4911 15.4877 11.1785C15.1751 10.866 14.9995 10.442 14.9995 10Z" fill="#9F9FA9"/>
+									</svg> 
+								</div>
+								<div class="dots__dropdown">
+									<div class="dots__dropdown__item">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.2867 8.71336C10.6041 8.03106 9.67846 7.64777 8.71334 7.64777C7.74821 7.64777 6.82259 8.03106 6.14 8.71336L3.56584 11.2867C2.88324 11.9693 2.49976 12.8951 2.49976 13.8604C2.49976 14.8258 2.88324 15.7516 3.56584 16.4342C4.24844 17.1168 5.17424 17.5003 6.13959 17.5003C7.10493 17.5003 8.03074 17.1168 8.71334 16.4342L10 15.1475" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M8.71338 11.2867C9.39597 11.969 10.3216 12.3523 11.2867 12.3523C12.2518 12.3523 13.1775 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5003 7.10493 17.5003 6.13959C17.5003 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8258 2.49976 13.8605 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L10 4.8525" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										<span>Скопировать ссылку</span>
+									</div>
+									<div class="dots__dropdown__item">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.33337 4.16667V16.3217C3.33337 17.0633 4.23087 17.4358 4.75587 16.9108L10 11.6667L15.2442 16.9108C15.7692 17.4358 16.6667 17.0642 16.6667 16.3217V4.16667C16.6667 3.72464 16.4911 3.30072 16.1786 2.98816C15.866 2.67559 15.4421 2.5 15 2.5H5.00004C4.55801 2.5 4.13409 2.67559 3.82153 2.98816C3.50897 3.30072 3.33337 3.72464 3.33337 4.16667V4.16667Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										<span>В закладки</span>	
+									</div>
+									<div class="dots__dropdown__item">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_2320_24025)">
+											<path d="M9.99996 18.3334C14.6023 18.3334 18.3333 14.6024 18.3333 10C18.3333 5.39765 14.6023 1.66669 9.99996 1.66669C5.39759 1.66669 1.66663 5.39765 1.66663 10C1.66663 14.6024 5.39759 18.3334 9.99996 18.3334Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M10 13.75V14.1666M10 5.83331V10.8333V5.83331Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</g>
+											<defs>
+											<clipPath id="clip0_2320_24025">
+											<rect width="20" height="20" fill="white"/>
+											</clipPath>
+											</defs>
+											</svg>
+										<span>Пожаловаться</span>	
+									</div>
+								</div>
+							</div>                                       
+						</div>
+						<h1 class="title title_h1">Пройдите тест на знание Java</h1>
+					</div>
+					<div class="test__main__question">
+						<div class="test__main__question__counter">1 / 20</div>
+						<h5 class="title title_h5">Как называется код между фигурными скобками?</h5>
+						<div class="test__main__question__wrapper">
+							<div>
+								<input type="radio" class="radio" name="question1" id="question1">
+								<label for="question1" class="mr-auto">Функция</label>
+								<div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 14V7.33333M8 14V2M12 14V4" stroke="#141416" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									12%
+								</div>	
+							</div>
+							<div>
+								<input type="radio" class="radio" name="question1" id="question2">
+								<label for="question2" class="mr-auto">Секция</label>
+								<div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 14V7.33333M8 14V2M12 14V4" stroke="#141416" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									28%
+								</div>	
+							</div>
+							<div class="false">
+								<input type="radio" checked class="radio" name="question1" id="question3">
+								<label for="question3" class="mr-auto">Тело</label>
+								<div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 14V7.33333M8 14V2M12 14V4" stroke="#141416" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									9%
+								</div>									
+							</div>
+							<div class="true">
+								<input type="radio" class="radio" name="question1" id="question4">
+								<label for="question4" class="mr-auto">Блок <br>
+									Код между фигурными скобками называется блоком.</label>
+								<div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 14V7.33333M8 14V2M12 14V4" stroke="#141416" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									59%
+								</div>	
+							</div>
+						</div>
+						<button class="btn btn_large ali-self-start">Следующий вопрос</button>
+					</div>
+					<div class="divider"></div>
+					<div class="test__main__question">
+						<div class="test__main__question__counter">2 / 20</div>
+						<h5 class="title title_h5">Каково значение arr[1].length в следующем массиве?<br>
+							int[][] arr = { {1, 2, 3, 4, 5}, { 6, 7, 8, 9, 10} };</h5>
+						<div class="test__main__question__wrapper">
+							<div class="true">
+								<input type="radio" checked class="radio" name="question5" id="question5">
+								<label for="question5" class="mr-auto">5<br>
+									arr[1] обращается ко второй строке двумерного массива, которая содержит 5 элементов.</label>
+								<div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 14V7.33333M8 14V2M12 14V4" stroke="#141416" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									59%
+								</div>	
+							</div>
+							<div>
+								<input type="radio" class="radio" name="question5" id="question6">
+								<label for="question6" class="mr-auto">10</label>
+								<div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 14V7.33333M8 14V2M12 14V4" stroke="#141416" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									12%
+								</div>	
+							</div>
+							<div>
+								<input type="radio" class="radio" name="question5" id="question7">
+								<label for="question7" class="mr-auto">1</label>
+								<div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 14V7.33333M8 14V2M12 14V4" stroke="#141416" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									28%
+								</div>									
+							</div>
+							<div>
+								<input type="radio" class="radio" name="question5" id="question8">
+								<label for="question8" class="mr-auto">2</label>
+								<div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 14V7.33333M8 14V2M12 14V4" stroke="#141416" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									9%
+								</div>	
+							</div>
+						</div>
+						<button class="btn btn_large ali-self-start">Следующий вопрос</button>
+					</div>
+					<div class="divider"></div>
+					<div class="test__main__question">
+						<div class="test__main__question__counter">2 / 20</div>
+						<h5 class="title title_h5">Каково значение arr[1].length в следующем массиве?<br>
+							int[][] arr = { {1, 2, 3, 4, 5}, { 6, 7, 8, 9, 10} };</h5>
+						<textarea disabled class="input__text input_extra-large input_code-style">
+public class Main 
+{
+	public static void main(String args[]) 
+	{
+		byte num = (byte)127;
+		num++;
+		System.out.println(num);
+	} 
+}</textarea>
+						<div class="test__main__question__wrapper">
+							<div>
+								<input type="radio" class="radio" name="question9" id="question9">
+								<label for="question9" class="mr-auto">0</label>
+							</div>
+							<div>
+								<input type="radio" class="radio" name="question9" id="question10">
+								<label for="question10" class="mr-auto">-128</label>
+							</div>
+							<div>
+								<input type="radio" class="radio" name="question9" id="question11">
+								<label for="question11" class="mr-auto">128</label>							
+							</div>
+							<div>
+								<input type="radio" class="radio" name="question9" id="question12">
+								<label for="question12" class="mr-auto">Ошибку компиляции</label>
+							</div>
+						</div>
+						<button class="btn btn_large ali-self-start">Следующий вопрос</button>
+					</div>
+					<div class="divider"></div>
+					<div class="test__main__result">
+						<div class="test__main__result__wrapper">
+							<div class="test__main__result__score">7/20</div>
+							<div class="test__main__result__text">Вам есть к чему стремиться!</div>
+						</div>
+						<div class="callout callout_blue">
+							<div class="callout__icon">🚀</div>
+							<div class="callout__text">
+								<p>Если вы только начинаете осваивать Java, обратите внимание на <a href="#">курс образовательной онлайн-платформы GeekBrains</a>.</p>
+								<p>За 12 месяцев занятий с практикующими преподавателями из крупнейших российских технологических компаний вы освоите основы языка. </p>
+								<p>Успешно завершив программу обучения, вы добавите к своему портфолио 5 реализованных проектов и получите помощь в трудоустройстве от квалифицированных HR-специалистов академии.</p>
+							</div>
+						</div>
+						<button class="btn btn_large ali-self-center">Интересно, хочу попробовать</button>
+					</div>
+					<div class="divider"></div>
+					<div class="card__action w100">
+						<div class="card__action__wrapper card__action__wrapper_left">
+							<a href="#" class="card__action__views">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.7142 9.13484C18.1092 9.6515 18.1092 10.349 17.7142 10.8648C16.47 12.489 13.485 15.8332 9.99999 15.8332C6.51499 15.8332 3.52999 12.489 2.28582 10.8648C2.09364 10.6174 1.98932 10.3131 1.98932 9.99984C1.98932 9.68657 2.09364 9.38223 2.28582 9.13484C3.52999 7.51067 6.51499 4.1665 9.99999 4.1665C13.485 4.1665 16.47 7.51067 17.7142 9.13484V9.13484Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								<span>5369</span>
+							</a>
+							<a href="#" class="card__action__comment">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								<span>64</span>
+							</a>
+							<a href="#" class="card__action__bookmarks">
+								<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>	
+								<span>21</span>	
+							</a>
+						</div>
+						<div class="card__action__wrapper card__action__wrapper_right">
+							<a href="#" class="card__action__rep_down">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+							<div class="card__action__rep-count">123</div>
+							<a href="#" class="card__action__rep_up">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="vacancy__main__footer__social ml-auto">
+						<a href="#" class="footer__social__link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1055_222609)">
+								<path d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4687H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92187 17.3438 4.92187V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4687H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z" fill="#92929D"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_1055_222609">
+								<rect width="24" height="24" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>												
+						</a>
+						<a href="#" class="footer__social__link">
+							<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.55016 19.75C16.6045 19.75 21.5583 12.2467 21.5583 5.74191C21.5583 5.53097 21.5536 5.31534 21.5442 5.10441C22.5079 4.40751 23.3395 3.5443 24 2.55534C23.1025 2.95465 22.1496 3.21543 21.1739 3.32878C22.2013 2.71295 22.9705 1.74552 23.3391 0.605813C22.3726 1.1786 21.3156 1.58266 20.2134 1.80066C19.4708 1.01161 18.489 0.489162 17.4197 0.314097C16.3504 0.139031 15.2532 0.321096 14.2977 0.832142C13.3423 1.34319 12.5818 2.15475 12.1338 3.14136C11.6859 4.12796 11.5754 5.23466 11.8195 6.29034C9.86249 6.19214 7.94794 5.68375 6.19998 4.79814C4.45203 3.91254 2.90969 2.66948 1.67297 1.14956C1.0444 2.23329 0.852057 3.51569 1.13503 4.73614C1.418 5.95658 2.15506 7.02349 3.19641 7.72003C2.41463 7.69521 1.64998 7.48473 0.965625 7.10597V7.16691C0.964925 8.30419 1.3581 9.40663 2.07831 10.2868C2.79852 11.167 3.80132 11.7706 4.91625 11.995C4.19206 12.1932 3.43198 12.222 2.69484 12.0794C3.00945 13.0575 3.62157 13.9129 4.44577 14.5264C5.26997 15.1398 6.26512 15.4806 7.29234 15.5013C5.54842 16.8712 3.39417 17.6142 1.17656 17.6107C0.783287 17.6101 0.390399 17.5859 0 17.5385C2.25286 18.9838 4.87353 19.7514 7.55016 19.75Z" fill="#92929D"/>
+							</svg>												
+						</a>
+						<a href="#" class="footer__social__link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12ZM11.9918 12.1927C13.7614 12.1927 15.1998 10.804 15.1998 9.09679C15.1998 7.38905 13.7614 6 11.9918 6C10.2227 6 8.78389 7.38905 8.78389 9.09679C8.78389 10.804 10.2227 12.1927 11.9918 12.1927ZM13.298 14.7202C13.951 14.5766 14.5807 14.3272 15.1608 13.9755C15.5998 13.7083 15.732 13.1482 15.4554 12.7245C15.179 12.2998 14.5992 12.172 14.1594 12.4392C12.8454 13.2368 11.1536 13.2366 9.8403 12.4392C9.40056 12.172 8.8205 12.2998 8.54468 12.7245C8.26809 13.1486 8.39995 13.7083 8.83893 13.9755C9.41898 14.3268 10.0488 14.5766 10.7017 14.7202L8.90822 16.4514C8.54161 16.8057 8.54161 17.38 8.9086 17.7343C9.09229 17.9112 9.33261 17.9998 9.57292 17.9998C9.81362 17.9998 10.0543 17.9112 10.238 17.7343L11.9997 16.0331L13.7629 17.7343C14.1295 18.0886 14.7243 18.0886 15.0913 17.7343C15.4587 17.38 15.4587 16.8053 15.0913 16.4514L13.298 14.7202Z" fill="#92929D"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9918 7.81483C12.7243 7.81483 13.3201 8.38976 13.3201 9.09679C13.3201 9.80327 12.7243 10.3786 11.9918 10.3786C11.26 10.3786 10.6636 9.80327 10.6636 9.09679C10.6636 8.38976 11.26 7.81483 11.9918 7.81483Z" fill="#92929D"/>
+							</svg>												
+						</a>
+						<a href="#" class="footer__social__link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1055_222612)">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM12.43 8.85893C11.2628 9.3444 8.93014 10.3492 5.43189 11.8733C4.86383 12.0992 4.56626 12.3202 4.53917 12.5363C4.49339 12.9015 4.95071 13.0453 5.57347 13.2411C5.65818 13.2678 5.74595 13.2954 5.83594 13.3246C6.44864 13.5238 7.27283 13.7568 7.70129 13.766C8.08994 13.7744 8.52373 13.6142 9.00264 13.2853C12.2712 11.079 13.9584 9.96381 14.0643 9.93977C14.139 9.92281 14.2426 9.90148 14.3128 9.96385C14.3829 10.0262 14.376 10.1443 14.3686 10.176C14.3233 10.3691 12.5281 12.0381 11.5991 12.9018C11.3095 13.171 11.1041 13.362 11.0621 13.4056C10.968 13.5033 10.8721 13.5958 10.78 13.6846C10.2108 14.2333 9.78391 14.6448 10.8036 15.3168C11.2936 15.6397 11.6858 15.9067 12.077 16.1731C12.5042 16.4641 12.9303 16.7543 13.4816 17.1157C13.6221 17.2077 13.7562 17.3034 13.8869 17.3965C14.3841 17.751 14.8308 18.0694 15.3826 18.0186C15.7032 17.9891 16.0345 17.6876 16.2027 16.7884C16.6002 14.6631 17.3816 10.0585 17.5622 8.16097C17.578 7.99473 17.5581 7.78197 17.5422 7.68857C17.5262 7.59518 17.4928 7.46211 17.3714 7.3636C17.2276 7.24694 17.0056 7.22234 16.9064 7.22408C16.455 7.23203 15.7626 7.47282 12.43 8.85893Z" fill="#92929D"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_1055_222612">
+								<rect width="24" height="24" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>												
+						</a>
+						<a href="#" class="footer__social__link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1055_222613)">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M1.68707 1.68707C0 3.37413 0 6.0894 0 11.52V12.48C0 17.9106 0 20.6259 1.68707 22.313C3.37413 24 6.0894 24 11.52 24H12.48C17.9106 24 20.6259 24 22.313 22.313C24 20.6259 24 17.9106 24 12.48V11.52C24 6.0894 24 3.37413 22.313 1.68707C20.6259 0 17.9106 0 12.48 0H11.52C6.0894 0 3.37413 0 1.68707 1.68707ZM4.05006 7.30005C4.18006 13.54 7.30005 17.2901 12.7701 17.2901H13.0801V13.72C15.0901 13.92 16.61 15.3901 17.22 17.2901H20.06C19.28 14.4501 17.2299 12.8801 15.95 12.2801C17.2299 11.5401 19.0299 9.74005 19.4599 7.30005H16.8799C16.3199 9.28005 14.6601 11.08 13.0801 11.25V7.30005H10.5V14.22C8.9 13.8201 6.88005 11.88 6.79005 7.30005H4.05006Z" fill="#92929D"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_1055_222613">
+								<rect width="24" height="24" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>												
+						</a>
+						<a href="#" class="footer__social__link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="24" height="24" rx="12" fill="#92929D"/>
+								<path d="M13.0293 10.9707C12.4833 10.4248 11.7428 10.1182 10.9707 10.1182C10.1986 10.1182 9.45807 10.4248 8.912 10.9707L6.85267 13.0293C6.30659 13.5754 5.9998 14.3161 5.9998 15.0883C5.9998 15.8606 6.30659 16.6013 6.85267 17.1473C7.39875 17.6934 8.13939 18.0002 8.91167 18.0002C9.68394 18.0002 10.4246 17.6934 10.9707 17.1473L12 16.118" stroke="#FCFCFC" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M10.9707 13.0293C11.5167 13.5752 12.2572 13.8818 13.0293 13.8818C13.8014 13.8818 14.5419 13.5752 15.088 13.0293L17.1473 10.9707C17.6934 10.4246 18.0002 9.68394 18.0002 8.91167C18.0002 8.13939 17.6934 7.39875 17.1473 6.85267C16.6013 6.30659 15.8606 5.9998 15.0883 5.9998C14.3161 5.9998 13.5754 6.30659 13.0293 6.85267L12 7.882" stroke="#FCFCFC" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>												
+						</a>
+					</div>
+				</div>
+				<div class="comments bg">
+					<div class="comments__header">
+						<h4 class="title title_h4">Комментарии</h4>
+						<div class="comments__header__count mr-auto">5</div>
+						<div class="f-ali-center">
+							<div class="card__header__tabs__item card__header__tabs__item_active">Популярные</div>
+							<div class="card__header__tabs__item">По порядку</div>
+						</div>
+					</div>
+					<div class="comments__send-comment">
+						<textarea class="input__text input_comment" placeholder="Написать комментарий..."></textarea>
+						<div class="comments__send-comment__img">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_243_224185)">
+								<path d="M1.66675 4.99996C1.66675 4.1159 2.01794 3.26806 2.64306 2.64294C3.26818 2.01782 4.11603 1.66663 5.00008 1.66663H15.0001C15.8841 1.66663 16.732 2.01782 17.3571 2.64294C17.9822 3.26806 18.3334 4.1159 18.3334 4.99996V15C18.3334 15.884 17.9822 16.7319 17.3571 17.357C16.732 17.9821 15.8841 18.3333 15.0001 18.3333H5.00008C4.11603 18.3333 3.26818 17.9821 2.64306 17.357C2.01794 16.7319 1.66675 15.884 1.66675 15V4.99996Z" stroke="#696974" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M7.08333 9.16667C8.23393 9.16667 9.16667 8.23393 9.16667 7.08333C9.16667 5.93274 8.23393 5 7.08333 5C5.93274 5 5 5.93274 5 7.08333C5 8.23393 5.93274 9.16667 7.08333 9.16667Z" stroke="#696974" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M12.105 10.5175L5 18.3333H15.1108C15.9655 18.3333 16.7851 17.9938 17.3895 17.3894C17.9938 16.7851 18.3333 15.9655 18.3333 15.1108V15C18.3333 14.6116 18.1875 14.4625 17.925 14.175L14.5667 10.5125C14.4101 10.3417 14.2198 10.2055 14.0076 10.1124C13.7955 10.0194 13.5664 9.97158 13.3347 9.97205C13.1031 9.97252 12.8741 10.0213 12.6624 10.1152C12.4507 10.2091 12.2608 10.3461 12.105 10.5175V10.5175Z" stroke="#696974" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_243_224185">
+								<rect width="20" height="20" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>								
+						</div>
+						<button class="comments__send-comment__btn btn btn_small">Отправить</button>
+						<div class="comments__send-comment__tip ali-self-end mobile-d-none">или по сочетанию Ctrl + Enter / ⌘ + Enter</div>
+					</div>
+					<div class="comments__list">
+						<div class="comments__list__item">
+							<div class="vacancies__feed__item__owner">
+								<div class="vacancies__feed__item__owner__img">
+									<img src="icons/general/photo2.png" alt="">
+								</div>
+								<div class="vacancies__feed__item__owner__name">Милослава Степанова</div>
+								<div class="vacancies__feed__item__owner__time">08.01, 11:46</div>
+								<div class="card_large__action f-ali-center gap-10">
+									<div class="card__action__rep-count card__action__rep-count_positive">123</div>                             
+								</div>
+							</div>
+							<div class="comments__list__item__text">Повседневная практика показывает, что сложившаяся структура организации в значительной степени обуславливает создание направлений прогрессивного развития.</div>
+							<div class="card__action m-0">
+								<div class="card__action__wrapper card__action__wrapper_left">
+									<a href="#" class="card__action__comment">
+										<span>Ответить</span>
+									</a>
+									<div class="dots__dropdown__wrapper" tabindex="-1">
+										<div class="vacancies__feed__item__owner__more">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.66626 10C1.66626 9.55798 1.84185 9.13406 2.15442 8.8215C2.46698 8.50894 2.8909 8.33334 3.33293 8.33334C3.77495 8.33334 4.19888 8.50894 4.51144 8.8215C4.824 9.13406 4.99959 9.55798 4.99959 10C4.99959 10.442 4.824 10.866 4.51144 11.1785C4.19888 11.4911 3.77495 11.6667 3.33293 11.6667C2.8909 11.6667 2.46698 11.4911 2.15442 11.1785C1.84185 10.866 1.66626 10.442 1.66626 10Z" fill="#9F9FA9"/>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33276 10C8.33276 9.55798 8.50836 9.13406 8.82092 8.8215C9.13348 8.50894 9.5574 8.33334 9.99943 8.33334C10.4415 8.33334 10.8654 8.50894 11.1779 8.8215C11.4905 9.13406 11.6661 9.55798 11.6661 10C11.6661 10.442 11.4905 10.866 11.1779 11.1785C10.8654 11.4911 10.4415 11.6667 9.99943 11.6667C9.5574 11.6667 9.13348 11.4911 8.82092 11.1785C8.50836 10.866 8.33276 10.442 8.33276 10Z" fill="#9F9FA9"/>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9995 10C14.9995 9.55798 15.1751 9.13406 15.4877 8.8215C15.8002 8.50894 16.2242 8.33334 16.6662 8.33334C17.1082 8.33334 17.5321 8.50894 17.8447 8.8215C18.1572 9.13406 18.3328 9.55798 18.3328 10C18.3328 10.442 18.1572 10.866 17.8447 11.1785C17.5321 11.4911 17.1082 11.6667 16.6662 11.6667C16.2242 11.6667 15.8002 11.4911 15.4877 11.1785C15.1751 10.866 14.9995 10.442 14.9995 10Z" fill="#9F9FA9"/>
+											</svg> 
+										</div>
+										<div class="dots__dropdown">
+											<div class="dots__dropdown__item">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M11.2867 8.71336C10.6041 8.03106 9.67846 7.64777 8.71334 7.64777C7.74821 7.64777 6.82259 8.03106 6.14 8.71336L3.56584 11.2867C2.88324 11.9693 2.49976 12.8951 2.49976 13.8604C2.49976 14.8258 2.88324 15.7516 3.56584 16.4342C4.24844 17.1168 5.17424 17.5003 6.13959 17.5003C7.10493 17.5003 8.03074 17.1168 8.71334 16.4342L10 15.1475" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M8.71338 11.2867C9.39597 11.969 10.3216 12.3523 11.2867 12.3523C12.2518 12.3523 13.1775 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5003 7.10493 17.5003 6.13959C17.5003 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8258 2.49976 13.8605 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L10 4.8525" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+												<span>Скопировать ссылку</span>
+											</div>
+											<div class="dots__dropdown__item">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M3.33337 4.16667V16.3217C3.33337 17.0633 4.23087 17.4358 4.75587 16.9108L10 11.6667L15.2442 16.9108C15.7692 17.4358 16.6667 17.0642 16.6667 16.3217V4.16667C16.6667 3.72464 16.4911 3.30072 16.1786 2.98816C15.866 2.67559 15.4421 2.5 15 2.5H5.00004C4.55801 2.5 4.13409 2.67559 3.82153 2.98816C3.50897 3.30072 3.33337 3.72464 3.33337 4.16667V4.16667Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+												<span>В закладки</span>	
+											</div>
+											<div class="dots__dropdown__item">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0_2320_24025)">
+													<path d="M9.99996 18.3334C14.6023 18.3334 18.3333 14.6024 18.3333 10C18.3333 5.39765 14.6023 1.66669 9.99996 1.66669C5.39759 1.66669 1.66663 5.39765 1.66663 10C1.66663 14.6024 5.39759 18.3334 9.99996 18.3334Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M10 13.75V14.1666M10 5.83331V10.8333V5.83331Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													</g>
+													<defs>
+													<clipPath id="clip0_2320_24025">
+													<rect width="20" height="20" fill="white"/>
+													</clipPath>
+													</defs>
+													</svg>
+												<span>Пожаловаться</span>	
+											</div>
+										</div>
+									</div>  
+								</div>
+							</div>
+						</div>
+						<div class="comments__list_nesting comments__list_nesting_1">
+							<div class="comments__list__item">
+								<div class="vacancies__feed__item__owner">
+									<div class="vacancies__feed__item__owner__img">
+										<img src="icons/general/photo2.png" alt="">
+									</div>
+									<div class="vacancies__feed__item__owner__name">Евгений Крестников</div>
+									<div class="vacancies__feed__item__owner__time">08.01, 11:46</div>
+									<div class="card_large__action f-ali-center gap-10">
+										<div class="card__action__rep-count card__action__rep-count_negative">-123</div>                             
+									</div>
+								</div>
+								<div class="comments__list__item__text">Значимость этих проблем настолько очевидна, что рамки и место обучения кадров способствует подготовки и реализации форм развития. Таким образом новая модель организационной деятельности позволяет оценить значение дальнейших направлений развития.</div>
+								<div class="card__action m-0">
+									<div class="card__action__wrapper card__action__wrapper_left">
+										<a href="#" class="card__action__comment">
+											<span>Ответить</span>
+										</a>
+										<div class="dots__dropdown__wrapper" tabindex="-1">
+											<div class="vacancies__feed__item__owner__more">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M1.66626 10C1.66626 9.55798 1.84185 9.13406 2.15442 8.8215C2.46698 8.50894 2.8909 8.33334 3.33293 8.33334C3.77495 8.33334 4.19888 8.50894 4.51144 8.8215C4.824 9.13406 4.99959 9.55798 4.99959 10C4.99959 10.442 4.824 10.866 4.51144 11.1785C4.19888 11.4911 3.77495 11.6667 3.33293 11.6667C2.8909 11.6667 2.46698 11.4911 2.15442 11.1785C1.84185 10.866 1.66626 10.442 1.66626 10Z" fill="#9F9FA9"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33276 10C8.33276 9.55798 8.50836 9.13406 8.82092 8.8215C9.13348 8.50894 9.5574 8.33334 9.99943 8.33334C10.4415 8.33334 10.8654 8.50894 11.1779 8.8215C11.4905 9.13406 11.6661 9.55798 11.6661 10C11.6661 10.442 11.4905 10.866 11.1779 11.1785C10.8654 11.4911 10.4415 11.6667 9.99943 11.6667C9.5574 11.6667 9.13348 11.4911 8.82092 11.1785C8.50836 10.866 8.33276 10.442 8.33276 10Z" fill="#9F9FA9"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9995 10C14.9995 9.55798 15.1751 9.13406 15.4877 8.8215C15.8002 8.50894 16.2242 8.33334 16.6662 8.33334C17.1082 8.33334 17.5321 8.50894 17.8447 8.8215C18.1572 9.13406 18.3328 9.55798 18.3328 10C18.3328 10.442 18.1572 10.866 17.8447 11.1785C17.5321 11.4911 17.1082 11.6667 16.6662 11.6667C16.2242 11.6667 15.8002 11.4911 15.4877 11.1785C15.1751 10.866 14.9995 10.442 14.9995 10Z" fill="#9F9FA9"/>
+												</svg> 
+											</div>
+											<div class="dots__dropdown">
+												<div class="dots__dropdown__item">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.2867 8.71336C10.6041 8.03106 9.67846 7.64777 8.71334 7.64777C7.74821 7.64777 6.82259 8.03106 6.14 8.71336L3.56584 11.2867C2.88324 11.9693 2.49976 12.8951 2.49976 13.8604C2.49976 14.8258 2.88324 15.7516 3.56584 16.4342C4.24844 17.1168 5.17424 17.5003 6.13959 17.5003C7.10493 17.5003 8.03074 17.1168 8.71334 16.4342L10 15.1475" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M8.71338 11.2867C9.39597 11.969 10.3216 12.3523 11.2867 12.3523C12.2518 12.3523 13.1775 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5003 7.10493 17.5003 6.13959C17.5003 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8258 2.49976 13.8605 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L10 4.8525" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													<span>Скопировать ссылку</span>
+												</div>
+												<div class="dots__dropdown__item">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3.33337 4.16667V16.3217C3.33337 17.0633 4.23087 17.4358 4.75587 16.9108L10 11.6667L15.2442 16.9108C15.7692 17.4358 16.6667 17.0642 16.6667 16.3217V4.16667C16.6667 3.72464 16.4911 3.30072 16.1786 2.98816C15.866 2.67559 15.4421 2.5 15 2.5H5.00004C4.55801 2.5 4.13409 2.67559 3.82153 2.98816C3.50897 3.30072 3.33337 3.72464 3.33337 4.16667V4.16667Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													<span>В закладки</span>	
+												</div>
+												<div class="dots__dropdown__item">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_2320_24025)">
+														<path d="M9.99996 18.3334C14.6023 18.3334 18.3333 14.6024 18.3333 10C18.3333 5.39765 14.6023 1.66669 9.99996 1.66669C5.39759 1.66669 1.66663 5.39765 1.66663 10C1.66663 14.6024 5.39759 18.3334 9.99996 18.3334Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M10 13.75V14.1666M10 5.83331V10.8333V5.83331Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+														<clipPath id="clip0_2320_24025">
+														<rect width="20" height="20" fill="white"/>
+														</clipPath>
+														</defs>
+														</svg>
+													<span>Пожаловаться</span>	
+												</div>
+											</div>
+										</div>  
+									</div>
+								</div>
+							</div>
+							<div class="comments__list__item">
+								<div class="vacancies__feed__item__owner">
+									<div class="vacancies__feed__item__owner__img">
+										<img src="icons/general/photo2.png" alt="">
+									</div>
+									<div class="vacancies__feed__item__owner__name">Евгений Крестников</div>
+									<div class="vacancies__feed__item__owner__time">08.01, 11:46</div>
+									<div class="card_large__action f-ali-center gap-10">
+										<div class="card__action__rep-count card__action__rep-count_neutral">-</div>                             
+									</div>
+								</div>
+								<div class="comments__list__item__text">Значимость этих проблем настолько очевидна, что рамки и место обучения кадров способствует подготовки и реализации форм развития. Таким образом новая модель организационной деятельности позволяет оценить значение дальнейших направлений развития.</div>
+								<div class="card__action m-0">
+									<div class="card__action__wrapper card__action__wrapper_left">
+										<a href="#" class="card__action__comment">
+											<span>Ответить</span>
+										</a>
+										<div class="dots__dropdown__wrapper" tabindex="-1">
+											<div class="vacancies__feed__item__owner__more">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M1.66626 10C1.66626 9.55798 1.84185 9.13406 2.15442 8.8215C2.46698 8.50894 2.8909 8.33334 3.33293 8.33334C3.77495 8.33334 4.19888 8.50894 4.51144 8.8215C4.824 9.13406 4.99959 9.55798 4.99959 10C4.99959 10.442 4.824 10.866 4.51144 11.1785C4.19888 11.4911 3.77495 11.6667 3.33293 11.6667C2.8909 11.6667 2.46698 11.4911 2.15442 11.1785C1.84185 10.866 1.66626 10.442 1.66626 10Z" fill="#9F9FA9"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33276 10C8.33276 9.55798 8.50836 9.13406 8.82092 8.8215C9.13348 8.50894 9.5574 8.33334 9.99943 8.33334C10.4415 8.33334 10.8654 8.50894 11.1779 8.8215C11.4905 9.13406 11.6661 9.55798 11.6661 10C11.6661 10.442 11.4905 10.866 11.1779 11.1785C10.8654 11.4911 10.4415 11.6667 9.99943 11.6667C9.5574 11.6667 9.13348 11.4911 8.82092 11.1785C8.50836 10.866 8.33276 10.442 8.33276 10Z" fill="#9F9FA9"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9995 10C14.9995 9.55798 15.1751 9.13406 15.4877 8.8215C15.8002 8.50894 16.2242 8.33334 16.6662 8.33334C17.1082 8.33334 17.5321 8.50894 17.8447 8.8215C18.1572 9.13406 18.3328 9.55798 18.3328 10C18.3328 10.442 18.1572 10.866 17.8447 11.1785C17.5321 11.4911 17.1082 11.6667 16.6662 11.6667C16.2242 11.6667 15.8002 11.4911 15.4877 11.1785C15.1751 10.866 14.9995 10.442 14.9995 10Z" fill="#9F9FA9"/>
+												</svg> 
+											</div>
+											<div class="dots__dropdown">
+												<div class="dots__dropdown__item">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.2867 8.71336C10.6041 8.03106 9.67846 7.64777 8.71334 7.64777C7.74821 7.64777 6.82259 8.03106 6.14 8.71336L3.56584 11.2867C2.88324 11.9693 2.49976 12.8951 2.49976 13.8604C2.49976 14.8258 2.88324 15.7516 3.56584 16.4342C4.24844 17.1168 5.17424 17.5003 6.13959 17.5003C7.10493 17.5003 8.03074 17.1168 8.71334 16.4342L10 15.1475" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M8.71338 11.2867C9.39597 11.969 10.3216 12.3523 11.2867 12.3523C12.2518 12.3523 13.1775 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5003 7.10493 17.5003 6.13959C17.5003 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8258 2.49976 13.8605 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L10 4.8525" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													<span>Скопировать ссылку</span>
+												</div>
+												<div class="dots__dropdown__item">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3.33337 4.16667V16.3217C3.33337 17.0633 4.23087 17.4358 4.75587 16.9108L10 11.6667L15.2442 16.9108C15.7692 17.4358 16.6667 17.0642 16.6667 16.3217V4.16667C16.6667 3.72464 16.4911 3.30072 16.1786 2.98816C15.866 2.67559 15.4421 2.5 15 2.5H5.00004C4.55801 2.5 4.13409 2.67559 3.82153 2.98816C3.50897 3.30072 3.33337 3.72464 3.33337 4.16667V4.16667Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													<span>В закладки</span>	
+												</div>
+												<div class="dots__dropdown__item">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_2320_24025)">
+														<path d="M9.99996 18.3334C14.6023 18.3334 18.3333 14.6024 18.3333 10C18.3333 5.39765 14.6023 1.66669 9.99996 1.66669C5.39759 1.66669 1.66663 5.39765 1.66663 10C1.66663 14.6024 5.39759 18.3334 9.99996 18.3334Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M10 13.75V14.1666M10 5.83331V10.8333V5.83331Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+														<clipPath id="clip0_2320_24025">
+														<rect width="20" height="20" fill="white"/>
+														</clipPath>
+														</defs>
+														</svg>
+													<span>Пожаловаться</span>	
+												</div>
+											</div>
+										</div>  
+									</div>
+								</div>
+							</div>
+							<div class="comments__list__item">
+								<div class="vacancies__feed__item__owner">
+									<div class="vacancies__feed__item__owner__img">
+										<img src="icons/general/photo2.png" alt="">
+									</div>
+									<div class="vacancies__feed__item__owner__name">Евгений Крестников</div>
+									<div class="vacancies__feed__item__owner__time">08.01, 11:46</div>
+									<div class="card_large__action f-ali-center gap-10">
+										<div class="card__action__rep-count card__action__rep-count_positive">13</div>                             
+									</div>
+								</div>
+								<div class="comments__list__item__text">Значимость этих проблем настолько очевидна, что рамки и место обучения кадров способствует подготовки и реализации форм развития. Таким образом новая модель организационной деятельности позволяет оценить значение дальнейших направлений развития.</div>
+								<div class="card__action m-0">
+									<div class="card__action__wrapper card__action__wrapper_left">
+										<a href="#" class="card__action__comment">
+											<span>Ответить</span>
+										</a>
+										<div class="dots__dropdown__wrapper" tabindex="-1">
+											<div class="vacancies__feed__item__owner__more">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M1.66626 10C1.66626 9.55798 1.84185 9.13406 2.15442 8.8215C2.46698 8.50894 2.8909 8.33334 3.33293 8.33334C3.77495 8.33334 4.19888 8.50894 4.51144 8.8215C4.824 9.13406 4.99959 9.55798 4.99959 10C4.99959 10.442 4.824 10.866 4.51144 11.1785C4.19888 11.4911 3.77495 11.6667 3.33293 11.6667C2.8909 11.6667 2.46698 11.4911 2.15442 11.1785C1.84185 10.866 1.66626 10.442 1.66626 10Z" fill="#9F9FA9"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33276 10C8.33276 9.55798 8.50836 9.13406 8.82092 8.8215C9.13348 8.50894 9.5574 8.33334 9.99943 8.33334C10.4415 8.33334 10.8654 8.50894 11.1779 8.8215C11.4905 9.13406 11.6661 9.55798 11.6661 10C11.6661 10.442 11.4905 10.866 11.1779 11.1785C10.8654 11.4911 10.4415 11.6667 9.99943 11.6667C9.5574 11.6667 9.13348 11.4911 8.82092 11.1785C8.50836 10.866 8.33276 10.442 8.33276 10Z" fill="#9F9FA9"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9995 10C14.9995 9.55798 15.1751 9.13406 15.4877 8.8215C15.8002 8.50894 16.2242 8.33334 16.6662 8.33334C17.1082 8.33334 17.5321 8.50894 17.8447 8.8215C18.1572 9.13406 18.3328 9.55798 18.3328 10C18.3328 10.442 18.1572 10.866 17.8447 11.1785C17.5321 11.4911 17.1082 11.6667 16.6662 11.6667C16.2242 11.6667 15.8002 11.4911 15.4877 11.1785C15.1751 10.866 14.9995 10.442 14.9995 10Z" fill="#9F9FA9"/>
+												</svg> 
+											</div>
+											<div class="dots__dropdown">
+												<div class="dots__dropdown__item">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.2867 8.71336C10.6041 8.03106 9.67846 7.64777 8.71334 7.64777C7.74821 7.64777 6.82259 8.03106 6.14 8.71336L3.56584 11.2867C2.88324 11.9693 2.49976 12.8951 2.49976 13.8604C2.49976 14.8258 2.88324 15.7516 3.56584 16.4342C4.24844 17.1168 5.17424 17.5003 6.13959 17.5003C7.10493 17.5003 8.03074 17.1168 8.71334 16.4342L10 15.1475" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M8.71338 11.2867C9.39597 11.969 10.3216 12.3523 11.2867 12.3523C12.2518 12.3523 13.1775 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5003 7.10493 17.5003 6.13959C17.5003 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8258 2.49976 13.8605 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L10 4.8525" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													<span>Скопировать ссылку</span>
+												</div>
+												<div class="dots__dropdown__item">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3.33337 4.16667V16.3217C3.33337 17.0633 4.23087 17.4358 4.75587 16.9108L10 11.6667L15.2442 16.9108C15.7692 17.4358 16.6667 17.0642 16.6667 16.3217V4.16667C16.6667 3.72464 16.4911 3.30072 16.1786 2.98816C15.866 2.67559 15.4421 2.5 15 2.5H5.00004C4.55801 2.5 4.13409 2.67559 3.82153 2.98816C3.50897 3.30072 3.33337 3.72464 3.33337 4.16667V4.16667Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													<span>В закладки</span>	
+												</div>
+												<div class="dots__dropdown__item">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_2320_24025)">
+														<path d="M9.99996 18.3334C14.6023 18.3334 18.3333 14.6024 18.3333 10C18.3333 5.39765 14.6023 1.66669 9.99996 1.66669C5.39759 1.66669 1.66663 5.39765 1.66663 10C1.66663 14.6024 5.39759 18.3334 9.99996 18.3334Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M10 13.75V14.1666M10 5.83331V10.8333V5.83331Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+														<clipPath id="clip0_2320_24025">
+														<rect width="20" height="20" fill="white"/>
+														</clipPath>
+														</defs>
+														</svg>
+													<span>Пожаловаться</span>	
+												</div>
+											</div>
+										</div>  
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="comments__list_nesting comments__list_nesting_2">
+							<div class="comments__list__item">
+								<div class="vacancies__feed__item__owner">
+									<div class="vacancies__feed__item__owner__img">
+										<img src="icons/general/photo2.png" alt="">
+									</div>
+									<div class="vacancies__feed__item__owner__name">Евгений Крестников</div>
+									<div class="vacancies__feed__item__owner__time">08.01, 11:46</div>
+									<div class="card_large__action f-ali-center gap-10">
+										<div class="card__action__rep-count card__action__rep-count_positive">9999</div>                             
+									</div>
+								</div>
+								<div class="comments__list__item__text">Смотрите какой котик</div>
+								<div class="comments__list__item__img" id="commentImageBtn"><img src="img/main/cat.jpg" alt=""></div>
+								<div class="card__action m-0">
+									<div class="card__action__wrapper card__action__wrapper_left">
+										<a href="#" class="card__action__comment">
+											<span>Ответить</span>
+										</a>
+										<div class="dots__dropdown__wrapper" tabindex="-1">
+											<div class="vacancies__feed__item__owner__more">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M1.66626 10C1.66626 9.55798 1.84185 9.13406 2.15442 8.8215C2.46698 8.50894 2.8909 8.33334 3.33293 8.33334C3.77495 8.33334 4.19888 8.50894 4.51144 8.8215C4.824 9.13406 4.99959 9.55798 4.99959 10C4.99959 10.442 4.824 10.866 4.51144 11.1785C4.19888 11.4911 3.77495 11.6667 3.33293 11.6667C2.8909 11.6667 2.46698 11.4911 2.15442 11.1785C1.84185 10.866 1.66626 10.442 1.66626 10Z" fill="#9F9FA9"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33276 10C8.33276 9.55798 8.50836 9.13406 8.82092 8.8215C9.13348 8.50894 9.5574 8.33334 9.99943 8.33334C10.4415 8.33334 10.8654 8.50894 11.1779 8.8215C11.4905 9.13406 11.6661 9.55798 11.6661 10C11.6661 10.442 11.4905 10.866 11.1779 11.1785C10.8654 11.4911 10.4415 11.6667 9.99943 11.6667C9.5574 11.6667 9.13348 11.4911 8.82092 11.1785C8.50836 10.866 8.33276 10.442 8.33276 10Z" fill="#9F9FA9"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9995 10C14.9995 9.55798 15.1751 9.13406 15.4877 8.8215C15.8002 8.50894 16.2242 8.33334 16.6662 8.33334C17.1082 8.33334 17.5321 8.50894 17.8447 8.8215C18.1572 9.13406 18.3328 9.55798 18.3328 10C18.3328 10.442 18.1572 10.866 17.8447 11.1785C17.5321 11.4911 17.1082 11.6667 16.6662 11.6667C16.2242 11.6667 15.8002 11.4911 15.4877 11.1785C15.1751 10.866 14.9995 10.442 14.9995 10Z" fill="#9F9FA9"/>
+												</svg> 
+											</div>
+											<div class="dots__dropdown">
+												<div class="dots__dropdown__item">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.2867 8.71336C10.6041 8.03106 9.67846 7.64777 8.71334 7.64777C7.74821 7.64777 6.82259 8.03106 6.14 8.71336L3.56584 11.2867C2.88324 11.9693 2.49976 12.8951 2.49976 13.8604C2.49976 14.8258 2.88324 15.7516 3.56584 16.4342C4.24844 17.1168 5.17424 17.5003 6.13959 17.5003C7.10493 17.5003 8.03074 17.1168 8.71334 16.4342L10 15.1475" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M8.71338 11.2867C9.39597 11.969 10.3216 12.3523 11.2867 12.3523C12.2518 12.3523 13.1775 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5003 7.10493 17.5003 6.13959C17.5003 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8258 2.49976 13.8605 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L10 4.8525" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													<span>Скопировать ссылку</span>
+												</div>
+												<div class="dots__dropdown__item">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3.33337 4.16667V16.3217C3.33337 17.0633 4.23087 17.4358 4.75587 16.9108L10 11.6667L15.2442 16.9108C15.7692 17.4358 16.6667 17.0642 16.6667 16.3217V4.16667C16.6667 3.72464 16.4911 3.30072 16.1786 2.98816C15.866 2.67559 15.4421 2.5 15 2.5H5.00004C4.55801 2.5 4.13409 2.67559 3.82153 2.98816C3.50897 3.30072 3.33337 3.72464 3.33337 4.16667V4.16667Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													<span>В закладки</span>	
+												</div>
+												<div class="dots__dropdown__item">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_2320_24025)">
+														<path d="M9.99996 18.3334C14.6023 18.3334 18.3333 14.6024 18.3333 10C18.3333 5.39765 14.6023 1.66669 9.99996 1.66669C5.39759 1.66669 1.66663 5.39765 1.66663 10C1.66663 14.6024 5.39759 18.3334 9.99996 18.3334Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														<path d="M10 13.75V14.1666M10 5.83331V10.8333V5.83331Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+														<clipPath id="clip0_2320_24025">
+														<rect width="20" height="20" fill="white"/>
+														</clipPath>
+														</defs>
+														</svg>
+													<span>Пожаловаться</span>	
+												</div>
+											</div>
+										</div>  
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn_large ali-self-center">Показать ещё</button>
+					</div>
+				</div>
+				<section class="feed__youtube m-0">
+					<div class="feed__youtube__header feed__section__header">
+						<h3 class="title title_h3 feed__youtube__header__title">Лучшие статьи по теме</h3>
+					</div>
+					<div class="feed__youtube__container grid__feed__youtube">
+						<article class="card card__article">
+							<div class="card__article__img">
+								<img src="img/main/php.png" alt="php">
+							</div>
+							<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+							<div class="card__action">
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+									<a href="#" class="card__action__comment">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<span>Обсудить</span>
+									</a>
+									<a href="#" class="card__action__bookmarks">
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>		
+									</a>
+								</div>
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+									<a href="#" class="card__action__rep_down">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<div class="card__action__rep-count">123</div>
+									<a href="#" class="card__action__rep_up">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</article>
+						<article class="card card__article">
+							<div class="card__article__img">
+								<img src="img/main/php.png" alt="php">
+							</div>
+							<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+							<div class="card__action">
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+									<a href="#" class="card__action__comment">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<span>Обсудить</span>
+									</a>
+									<a href="#" class="card__action__bookmarks">
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>		
+									</a>
+								</div>
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+									<a href="#" class="card__action__rep_down">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<div class="card__action__rep-count">123</div>
+									<a href="#" class="card__action__rep_up">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</article>
+						<article class="card card__article">
+							<div class="card__article__img">
+								<img src="img/main/php.png" alt="php">
+							</div>
+							<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+							<div class="card__action">
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+									<a href="#" class="card__action__comment">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<span>Обсудить</span>
+									</a>
+									<a href="#" class="card__action__bookmarks">
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>		
+									</a>
+								</div>
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+									<a href="#" class="card__action__rep_down">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<div class="card__action__rep-count">123</div>
+									<a href="#" class="card__action__rep_up">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
+				//=include templates/block/discuss-in-feed.html
+				//=include templates/base/footer.html
+			</div>
+        </section>
+        //=include templates/base/aside.html
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

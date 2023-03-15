@@ -1,0 +1,20 @@
+.header {
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__btn-head {
+        border-radius: 8px 0 0 8px;
+    }
+    &__btn-subhead {
+        border-radius: 0 8px 8px 0;
+        border-left: solid 1px var(--hover-color);
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

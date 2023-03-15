@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevLib 404</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/vue.global.js"></script>
+	<script src="js/vue-select.umd.js"></script>
+	
+</head>
+<body>
+	//=include templates/base/header.html
+    <div class="page">
+        //=include templates/base/menu.html
+        <div class="feed">
+			<div class="container container_col">
+				<div class="page-404">
+                    <div class="page-404__text">
+                        <h1 class="title title_h1">Страница не найдена</h1>
+                        <div>Сожалеем, но такой страницы не существует. <br> Почитайте что-нибудь здесь или перейдите на главную</div>
+                        <button class="btn btn_large">Перейти на главную страницу</button>
+                    </div>
+                    <div class="page-404__img"><img src="icons/general/404.svg" alt="404"></div>
+                </div>
+				//=include templates/block/feed_articles.html
+				//=include templates/block/feed__blogs.html
+				//=include templates/block/feed_courses.html
+                //=include templates/block/discuss-in-feed.html
+                //=include templates/block/feed_forum.html
+				//=include templates/base/footer.html
+			</div>
+		</div>
+        //=include templates/base/aside.html
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

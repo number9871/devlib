@@ -1,0 +1,89 @@
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 32px;
+    &__header {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        flex-wrap: wrap;
+        min-height: 40px;
+        div {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            min-height: 40px;
+        }
+        &__count {
+            color: var(--interaction-light-2);
+        }
+    }
+    &__send-comment {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        &__img {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            cursor: pointer;
+            svg > g > path {
+                transition: var(--hover-transition);
+            }
+            &:hover {
+                svg > g > path {
+                    stroke: var(--primary-blue-hover);
+                }
+            }
+        }
+        &__btn {
+            position: absolute;
+            right: 8px;
+            top: 60px;
+        }
+        &__tip {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 130%;
+            color: var(--interaction-light-2);
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            &__img {
+                width: 40%;
+                cursor: pointer;
+                img {
+                    max-height: 100%;
+                    border-radius: var(--border-radius-8);
+                }
+                &_modal {
+                    display: none;
+                    top: 50vh !important;
+                    transform: translate(-50%, -50%) !important;
+                    border-radius: var(--border-radius-8);
+                }
+            }
+        }
+        &_nesting {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-left: 12px;
+            padding-left: 25px;
+            border-left: solid 3px var(--bg-light-3);
+            &_1 {margin-left: calc(var(--comment-nesting) * 1);}
+            &_2 {margin-left: calc(var(--comment-nesting) * 4);}
+            &_3 {margin-left: calc(var(--comment-nesting) * 6);}
+            &_4 {margin-left: calc(var(--comment-nesting) * 8);}
+            &_5 {margin-left: calc(var(--comment-nesting) * 10);}
+        }
+    }
+}

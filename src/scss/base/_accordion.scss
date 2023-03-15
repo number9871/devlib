@@ -1,0 +1,110 @@
+.accordion {
+	width: 100%;
+	&__input {
+		position: absolute;
+		opacity: 0;
+		z-index: -1;
+	}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		width: 100%;
+		// background: var(--bg-light-4);
+		&_large {
+			padding: 15px 0 7px;
+		}
+	}
+	&__label {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		height: 32px;
+		cursor: pointer;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 140%;
+		img {
+			transition: var(--hover-transition);
+		}
+		&__count {
+			color: var(--interaction-light-2);
+		}
+		&__clear {
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 125%;
+			color: var(--interaction-light-2);
+			transition: var(--hover-transition);
+			cursor: pointer;
+			&:hover {
+				color: var(--primary-blue-hover);
+			}
+		}
+	}
+	&__content {
+		overflow: hidden;
+		max-height: 0;
+		opacity: 0;
+		// background: var(--bg-light-4);
+		// transition: var(--hover-transition);
+		transition: max-height .1s,
+					opacity .3s,
+					overflow .3s,
+					padding-top .3s;
+	}
+	&__action {
+		display: flex;
+		gap: 12px;
+		opacity: 0;
+		width: 0;
+		overflow: hidden;
+		transition: var(--hover-transition);
+		&__edit {
+			height: 20px;
+			cursor: pointer;
+			svg > path {
+				transition: var(--hover-transition);
+			}
+			&:hover {
+				svg > path {
+					stroke: var(--primary-blue-hover);
+				}
+			}
+		}
+	}
+}
+
+.accordion__input:checked {
+	+ .accordion__wrapper > .accordion__label > img {
+		transform: rotate(90deg);
+	}
+	+ .accordion__wrapper > .accordion__action {
+		width: max-content;
+		opacity: 1;
+        overflow: initial;
+	}
+	~ .accordion__content {
+		// animation: showContent .2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		max-height: max-content;
+		opacity: 1;
+        overflow: initial;
+		padding: 8px 0;
+	}
+}
+
+@keyframes showContent {
+    0% {
+		max-height: max-content;
+		opacity: 0;
+	}
+    99% {
+		max-height: max-content;
+        opacity: 1;
+    }
+    100% {
+		max-height: max-content;
+		opacity: 1;
+        overflow: initial;
+    }
+}

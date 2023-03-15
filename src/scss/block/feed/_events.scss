@@ -1,0 +1,82 @@
+.feed {
+    &__events {
+        &__container {
+            margin-top: 20px;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            &__owner {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                &__img {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: var(--border-radius-100);
+                    overflow: hidden;
+                    img {
+                        height: 24px;
+                    }
+                }
+                &__name {
+                    margin-left: 6px;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 125%;
+                }
+                &__verif {
+                    margin-left: 6px;
+                    background: url('../icons/general/vacancies/verif.svg');
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            &__name {
+                margin: 8px 0 6px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 125%;
+            }
+            &__condition-wrapper {
+                margin-left: -16px;
+                display: flex;
+                // justify-content: space-between;
+                align-items: center;
+                align-content: flex-start;
+                flex-wrap: wrap;
+                margin-top: 8px;
+                div {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 140%;
+                    margin-left: 16px;
+                    &:first-child {
+                        color: var(--primary-green);
+                    }
+                }
+            }
+        }
+        &__more {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            cursor: pointer;
+            transition: var(--hover-transition);
+            svg {
+                margin-right: 12px;
+            }
+            path {
+                transition: var(--hover-transition);
+            }
+            &:hover {
+                color: var(--primary-blue-hover);
+                path {
+                    stroke: var(--primary-blue-hover);
+                }
+            }
+        }
+    }
+}

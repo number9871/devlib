@@ -1,0 +1,73 @@
+.feed {
+    &__forum {
+        // padding: 32px 0;
+        &__container {
+            margin-top: 24px;
+        }
+        &__arrow {
+            position: absolute;
+            border-radius: var(--border-radius-100);
+            width: 40px;
+            height: 40px;
+            right: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--bg-light-1);
+            z-index: 1;
+            transition: var(--hover-transition);
+            img {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &:hover {
+                background: var(--bg-light-2);
+            }
+        }
+        &__item {
+            &__title {
+                margin: 20px 0;
+                transition: var(--hover-transition);
+                &:hover {
+                    color: var(--primary-blue-hover);
+                }
+            }
+        }
+        &__owner {
+            &__header {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                &__img {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: var(--border-radius-100);
+                    overflow: hidden;
+                }
+                &__name {
+                    color: var(--font-main);
+                    margin-left: 6px;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 125%;
+                }
+                &__time {
+                    color: var(--text-light-3);
+                    margin-left: 16px;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 125%;
+                }
+            }
+        }
+        &__action {
+            display: flex;
+            a {
+                display: flex;
+                align-items: center;
+                color: var(--interaction-light-2);
+                margin-right: 12px;
+            }
+        }
+    }
+}

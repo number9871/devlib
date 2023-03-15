@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DevLib</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/vue.global.js"></script>
+	<script src="js/vue-select.umd.js"></script>
+	
+</head>
+<body>
+	//=include templates/base/header.html
+	<div class="page">
+		//=include templates/base/menu.html
+		<section class="feed">
+			<div class="container container_col">
+				<div class="feed__header feed__section__header">
+					<button class="btn btn_large btn_light btn_img-left feed__feed-settings-btn feed__feed-settings-btn_desktop"><img src="icons/general/feed/settings.svg" alt=""><span>Настроить ленту</span></button>
+					<div class="feed__btn-wrapper">
+						<button class="btn btn_large btn_light btn_img-left feed__feed-settings-btn feed__feed-settings-btn_mobile"><img src="icons/general/feed/settings.svg" alt=""><span>Настроить ленту</span></button>
+						<div class="feed__btn-double">
+							<button class="btn btn_small btn_white">Новое</button>
+							<button class="btn btn_small btn_transparent btn_img-right">Популярное<img src="icons/general/menu/arrowdown.svg" alt="">
+							</button>
+						</div>
+						<button class="btn btn_large feed__events__header__btn feed__section__header__btn feed__section__header__btn_desktop"><img src="icons/general/vacancies/tg.svg" alt="">Подписаться<span> на рассылку</span></button>
+					</div>
+					<button class="btn btn_large feed__events__header__btn feed__section__header__btn feed__section__header__btn_mobile"><img src="icons/general/vacancies/tg.svg" alt="">Подписаться<span> на рассылку</span></button>
+				</div>
+				<div class="grid__feed grid_jc-c">
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__popular-article">
+						<div class="card__popular-article__wrapper">
+							<a href="#">
+								<h5 class="title title_h5 title_light card__popular-article__title">13 лучших каналов YouTube по самостоятельному изучению 1С для новичков и профессионалов</h5>
+							</a>
+							<div class="card__action">
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+									<a href="#" class="card__action__comment">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<span>Обсудить</span>
+									</a>
+									<a href="#" class="card__action__bookmarks">
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>		
+									</a>
+								</div>
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+									<a href="#" class="card__action__rep_down">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<div class="card__action__rep-count">123</div>
+									<a href="#" class="card__action__rep_up">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="card card__ads">
+						<div class="card__ads__wrapper">
+							<div class="card__ads__official">
+								<div class="card__ads__logo">
+									<img src="icons/general/feed/card/ads/logo.svg" alt="logo">
+								</div>
+								<div class="chip chip_blue-transparent">Реклама</div>
+							</div>
+							<h5 class="title title_h5 title_light card__ads__title">
+								Как математика используется <br><span>в анализе данных</span>
+							</h5>
+							<div class="card__ads__descr">Бесплатный вебинар<br>
+								8 декабря в 16:00 по МСК</div>
+								<button class="btn btn_small btn_light card__ads__btn">Зарегистрироваться на вебинар</button>
+								<a href="#" class="card__ads__link">Реклама на DevLib.com</a>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__popular-article">
+						<div class="card__popular-article__wrapper">
+							<a href="#">
+								<h5 class="title title_h5 title_light card__popular-article__title">13 лучших каналов YouTube по самостоятельному изучению 1С для новичков и профессионалов</h5>
+							</a>
+							<div class="card__action">
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+									<a href="#" class="card__action__comment">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<span>Обсудить</span>
+									</a>
+									<a href="#" class="card__action__bookmarks">
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>		
+									</a>
+								</div>
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+									<a href="#" class="card__action__rep_down">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<div class="card__action__rep-count">123</div>
+									<a href="#" class="card__action__rep_up">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="card card__user-top">
+						<div class="card__user-top__wrapper">
+							<h5 class="title title_h5">Топ пользователей</h5>
+							<div class="card__user-top__user">
+								<div class="card__user-top__user__wrapper">
+									<div class="card__user-top__user__wrapper__img"><img src="img/main/photo.jpg" alt="photo"></div>
+									<div class="card__user-top__user__wrapper__name">Виталий Пономарев</div>
+								</div>
+								<div class="card__user-top__user__rep card__action__rep-count">123</div>
+							</div>
+							<div class="card__user-top__user">
+								<div class="card__user-top__user__wrapper">
+									<div class="card__user-top__user__wrapper__img"><img src="img/main/photo.jpg" alt="photo"></div>
+									<div class="card__user-top__user__wrapper__name">Виталий Пономарев</div>
+								</div>
+								<div class="card__user-top__user__rep card__action__rep-count">123</div>
+							</div>
+							<div class="card__user-top__user">
+								<div class="card__user-top__user__wrapper">
+									<div class="card__user-top__user__wrapper__img"><img src="img/main/photo.jpg" alt="photo"></div>
+									<div class="card__user-top__user__wrapper__name">Виталий Пономарев</div>
+								</div>
+								<div class="card__user-top__user__rep card__action__rep-count">123</div>
+							</div>
+							<div class="card__user-top__user">
+								<div class="card__user-top__user__wrapper">
+									<div class="card__user-top__user__wrapper__img"><img src="img/main/photo.jpg" alt="photo"></div>
+									<div class="card__user-top__user__wrapper__name">Виталий Пономарев</div>
+								</div>
+								<div class="card__user-top__user__rep card__action__rep-count">123</div>
+							</div>
+							<div class="card__user-top__user">
+								<div class="card__user-top__user__wrapper">
+									<div class="card__user-top__user__wrapper__img"><img src="img/main/photo.jpg" alt="photo"></div>
+									<div class="card__user-top__user__wrapper__name">Виталий Пономарев</div>
+								</div>
+								<div class="card__user-top__user__rep card__action__rep-count">123</div>
+							</div>
+						</div>
+						<a href="#" class="card__user-top__all">Рейтинг всех пользователей</a>
+					</article>
+				</div>
+				<article class="feed__courses">
+					<h4 class="title title_h4 feed__courses__title">Наши курсы</h4>
+					<div class="feed__courses__wrapper grid__feed__wrapper">
+						<div class="feed__courses__item">
+							<div class="feed__courses__item__img">
+								<img src="icons/general/courses/math.jfif" alt="course">
+							</div>
+							<div class="feed__courses__item__name">Математика для Data Science</div>
+						</div>
+						<div class="feed__courses__item">
+							<div class="feed__courses__item__img">
+								<img src="icons/general/courses/math.jfif" alt="course">
+							</div>
+							<div class="feed__courses__item__name">Математика для Data Science</div>
+						</div>
+						<div class="feed__courses__item">
+							<div class="feed__courses__item__img">
+								<img src="icons/general/courses/math.jfif" alt="course">
+							</div>
+							<div class="feed__courses__item__name">Математика для Data Science</div>
+						</div>
+						<div class="feed__courses__item">
+							<div class="feed__courses__item__img">
+								<img src="icons/general/courses/math.jfif" alt="course">
+							</div>
+							<div class="feed__courses__item__name">Математика для Data Science</div>
+						</div>
+						<div class="feed__courses__item">
+							<div class="feed__courses__item__img">
+								<img src="icons/general/courses/math.jfif" alt="course">
+							</div>
+							<div class="feed__courses__item__name">Математика для Data Science</div>
+						</div>
+						<div class="feed__courses__item">
+							<div class="feed__courses__item__img">
+								<img src="icons/general/courses/math.jfif" alt="course">
+							</div>
+							<div class="feed__courses__item__name">Математика для Data Science</div>
+						</div>
+					</div>
+				</article>
+				<div class="grid__feed grid_jc-c">
+					<article class="card card__article test">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+							<div class="chip chip_blue-transparent card__test">Тесты</div>
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article test">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+							<div class="chip chip_blue-transparent card__test">Тесты</div>
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__task">
+						<div class="card__task__wrapper">
+							<h5 class="title title_h5">Вот же задачка</h5>
+							<div class="card__task__reload"><img src="icons/general/feed/card/reload.svg" alt="reload"></div>
+						</div>
+						<div class="card__task_text">Вы играете в футбол на пустынном острове и хотите подбросить монетку, чтобы решить, какой команде достанется мяч. Единственная монета, что у вас есть, является гнутой, и поэтому вносит явные искажения в результат при подбрасывании. Как вы тем не менее можете использовать такую монету, чтобы принять справедливое решение?</div>
+						<button class="btn btn_small btn_border-light">Узнать ответ и обсудить</button>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+				</div>
+				<article class="feed__social">
+					<h4 class="title title_h4 feed__social__title">Наши соцсети</h4>
+					<div class="feed__social__wrapper grid__feed__wrapper">
+						<div class="feed__social__item">
+							<div class="feed__social__item__img">
+								<img src="icons/general/social/facebook.png" alt="facebook">
+							</div>
+							<div class="feed__social__item__name">Facebook</div>
+						</div>
+						<div class="feed__social__item">
+							<div class="feed__social__item__img">
+								<img src="icons/general/social/facebook.png" alt="facebook">
+							</div>
+							<div class="feed__social__item__name">Facebook</div>
+						</div>
+						<div class="feed__social__item">
+							<div class="feed__social__item__img">
+								<img src="icons/general/social/facebook.png" alt="facebook">
+							</div>
+							<div class="feed__social__item__name">Facebook</div>
+						</div>
+						<div class="feed__social__item">
+							<div class="feed__social__item__img">
+								<img src="icons/general/social/facebook.png" alt="facebook">
+							</div>
+							<div class="feed__social__item__name">Facebook</div>
+						</div>
+						<div class="feed__social__item">
+							<div class="feed__social__item__img">
+								<img src="icons/general/social/facebook.png" alt="facebook">
+							</div>
+							<div class="feed__social__item__name">Facebook</div>
+						</div>
+						<div class="feed__social__item">
+							<div class="feed__social__item__img">
+								<img src="icons/general/social/facebook.png" alt="facebook">
+							</div>
+							<div class="feed__social__item__name">Facebook</div>
+						</div>
+						<div class="feed__social__item">
+							<div class="feed__social__item__img feed__social__item__img_tg-mark">
+								<img src="icons/general/social/book.png" alt="book">
+							</div>
+							<div class="feed__social__item__name"> «Книги для программистов»</div>
+						</div>
+						<div class="feed__social__item">
+							<div class="feed__social__item__img feed__social__item__img_tg-mark">
+								<img src="icons/general/social/hacker.png" alt="hacker">
+							</div>
+							<div class="feed__social__item__name">«Библиотека хакера»</div>
+						</div>
+						<div class="feed__social__item">
+							<div class="feed__social__item__img">
+								<img src="icons/general/social/dot.svg" alt="">
+							</div>
+							<div class="feed__social__item__name">И еще 11 тематических Telegram-каналов</div>
+						</div>
+					</div>
+				</article>
+				<section class="feed__vacancies feed__section">
+					<div class="feed__vacancies__header feed__section__header">
+						<h5 class="title title_h5 feed__section__header__title_desktop">Вакансии</h5>
+						<div class="feed__vacancies__btn-wrapper">
+							<h5 class="title title_h6 feed__section__header__title_mobile">Вакансии</h5>
+							<button class="btn btn_border-blue btn_small">Разместить<span> вакансию</span></button>
+							<button class="btn btn_small feed__vacancies__header__btn feed__section__header__btn feed__section__header__btn_desktop"><img src="icons/general/vacancies/tg.svg" alt=""> Подписаться</button>
+						</div>
+						<button class="btn btn_small btn_blue-transparent feed__vacancies__header__btn feed__section__header__btn feed__section__header__btn_mobile"><img src="icons/general/vacancies/tgBlue.svg" alt="">Подписаться на уведомления</button>
+					</div>
+					<div class="feed__vacancies__container grid__feed-section">
+						<article class="feed__vacancies__item">
+							<div class="feed__vacancies__item__owner">
+								<div class="feed__vacancies__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__vacancies__item__owner__name">Библиотека разработчика</div>
+								<div class="feed__vacancies__item__owner__verif"></div>
+							</div>
+							<div class="feed__vacancies__item__name">Middle Backend разработчик</div>
+							<div class="feed__vacancies__item__stack-wrapper">
+								<div class="chip chip_border-blue">Python</div>
+								<div class="chip chip_border-blue">Java</div>
+							</div>
+							<div class="feed__vacancies__item__condition-wrapper">
+								<div>от 100 000 ₽</div>
+								<div>Фултайм</div>
+								<div>Москва</div>
+							</div>
+						</article>
+						<article class="feed__vacancies__item">
+							<div class="feed__vacancies__item__owner">
+								<div class="feed__vacancies__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__vacancies__item__owner__name">Библиотека разработчика</div>
+							</div>
+							<div class="feed__vacancies__item__name">Middle Backend разработчик</div>
+							<div class="feed__vacancies__item__stack-wrapper">
+								<div class="chip chip_border-blue">Python</div>
+								<div class="chip chip_border-blue">Java</div>
+								<div class="chip chip_border-blue">Python</div>
+								<div class="chip chip_border-blue">Java</div>
+								<div class="chip chip_border-blue">Python</div>
+								<div class="chip chip_border-blue">Java</div>
+							</div>
+							<div class="feed__vacancies__item__condition-wrapper">
+								<div>от 100 000 ₽</div>
+								<div>Фултайм</div>
+								<div>Москва</div>
+							</div>
+						</article>
+						<article class="feed__vacancies__item">
+							<div class="feed__vacancies__item__owner">
+								<div class="feed__vacancies__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__vacancies__item__owner__name">Библиотека разработчика</div>
+								<div class="feed__vacancies__item__owner__verif"></div>
+							</div>
+							<div class="feed__vacancies__item__name">Middle Backend разработчик</div>
+							<div class="feed__vacancies__item__stack-wrapper">
+								<div class="chip chip_border-blue">Python</div>
+								<div class="chip chip_border-blue">Java</div>
+							</div>
+							<div class="feed__vacancies__item__condition-wrapper">
+								<div>от 100 000 ₽</div>
+								<div>Фултайм</div>
+								<div>Фултайм</div>
+								<div>Москва</div>
+								<div>Москва</div>
+							</div>
+						</article>
+						<article class="feed__vacancies__item">
+							<div class="feed__vacancies__item__owner">
+								<div class="feed__vacancies__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__vacancies__item__owner__name">Библиотека разработчика</div>
+								<div class="feed__vacancies__item__owner__verif"></div>
+							</div>
+							<div class="feed__vacancies__item__name">Middle Backend разработчик</div>
+							<div class="feed__vacancies__item__stack-wrapper">
+								<div class="chip chip_border-blue">Python</div>
+								<div class="chip chip_border-blue">Java</div>
+							</div>
+							<div class="feed__vacancies__item__condition-wrapper">
+								<div>от 100 000 ₽</div>
+								<div>Фултайм</div>
+								<div>Москва</div>
+							</div>
+						</article>
+						<article class="feed__vacancies__item">
+							<div class="feed__vacancies__item__owner">
+								<div class="feed__vacancies__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__vacancies__item__owner__name">Библиотека разработчика</div>
+								<div class="feed__vacancies__item__owner__verif"></div>
+							</div>
+							<div class="feed__vacancies__item__name">Middle Backend разработчик</div>
+							<div class="feed__vacancies__item__stack-wrapper">
+								<div class="chip chip_border-blue">Python</div>
+								<div class="chip chip_border-blue">Java</div>
+							</div>
+							<div class="feed__vacancies__item__condition-wrapper">
+								<div>от 100 000 ₽</div>
+								<div>Фултайм</div>
+								<div>Москва</div>
+							</div>
+						</article>
+						<article class="feed__vacancies__item">
+							<div class="feed__vacancies__item__owner">
+								<div class="feed__vacancies__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__vacancies__item__owner__name">Библиотека разработчика</div>
+								<div class="feed__vacancies__item__owner__verif"></div>
+							</div>
+							<div class="feed__vacancies__item__name">Middle Backend разработчик</div>
+							<div class="feed__vacancies__item__stack-wrapper">
+								<div class="chip chip_border-blue">Python</div>
+								<div class="chip chip_border-blue">Java</div>
+							</div>
+							<div class="feed__vacancies__item__condition-wrapper">
+								<div>от 100 000 ₽</div>
+								<div>Фултайм</div>
+								<div>Москва</div>
+							</div>
+						</article>
+						<div class="feed__vacancies__more">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12 6C10.4379 7.5621 8 10 8 10C8 10 5.5621 7.5621 4 6" stroke="#141416" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							Показать ещё</div>
+					</div>
+				</section>
+				<div class="grid__feed grid_jc-c">
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article test">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+				</div>
+				<article class="card card__ads card__ads__long">
+					<div class="card__ads__wrapper">
+						<div class="card__ads__official">
+							<div class="card__ads__logo">
+								<img src="icons/general/feed/card/ads/logo.svg" alt="logo">
+							</div>
+							<div class="chip chip_blue-transparent">Реклама</div>
+						</div>
+						<h5 class="title title_h5 title_light card__ads__title card__ads__long__title">
+							Как математика используется <br><span>в анализе данных</span>
+						</h5>
+						<div class="card__ads__descr">Бесплатный вебинар
+							8 декабря в 16:00 по МСК</div>
+							<button class="btn btn_small btn_light card__ads__btn">Зарегистрироваться</button>
+							<a href="#" class="card__ads__link card__ads__long__link">Реклама на DevLib.com</a>
+					</div>
+				</article>
+				//=include templates/block/discuss-in-feed.html
+				<div class="grid__feed grid_jc-c">
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="card card__article">
+						<div class="card__article__img">
+							<img src="img/main/php.png" alt="php">
+						</div>
+						<h5 class="title title_h5 card__article__title">ТОП-10 книг для бизнес-аналитика: от новичка до нала</h5>
+						<div class="card__action">
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>Обсудить</span>
+								</a>
+								<a href="#" class="card__action__bookmarks">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>		
+								</a>
+							</div>
+							<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+								<a href="#" class="card__action__rep_down">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<div class="card__action__rep-count">123</div>
+								<a href="#" class="card__action__rep_up">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+				</div>
+				<section class="feed__events feed__section feed__section_before-green">
+					<div class="feed__events__header feed__section__header">
+						<h5 class="title title_h5 feed__section__header__title_desktop">Мероприятия</h5>
+						<div class="feed__events__btn-wrapper">
+							<h5 class="title title_h6 feed__section__header__title_mobile">Мероприятия</h5>
+							<button class="btn btn_border-blue btn_small">Разместить<span> мероприятие</span></button>
+							<button class="btn btn_small feed__events__header__btn feed__section__header__btn
+							feed__section__header__btn_desktop"><img src="icons/general/vacancies/tg.svg" alt=""> Подписаться</button>
+						</div>
+						<button class="btn btn_small btn_blue-transparent feed__events__header__btn feed__section__header__btn feed__section__header__btn_mobile"><img src="icons/general/vacancies/tgBlue.svg" alt="">Подписаться на уведомления</button>
+					</div>
+					<div class="feed__events__container grid__feed-section">
+						<article class="feed__events__item">
+							<div class="feed__events__item__owner">
+								<div class="feed__events__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__events__item__owner__name">Библиотека разработчика</div>
+								<div class="feed__events__item__owner__verif"></div>
+							</div>
+							<div class="feed__events__item__name">Идеальный SDK для Android приложений: как выбрать и существует ли?</div>
+							<div class="feed__events__item__condition-wrapper">
+								<div>Сегодня</div>
+								<div>Онлайн</div>
+								<div>Бесплатно</div>
+							</div>
+						</article>
+						<article class="feed__events__item">
+							<div class="feed__events__item__owner">
+								<div class="feed__events__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__events__item__owner__name">Библиотека разработчика</div>
+								<div class="feed__events__item__owner__verif"></div>
+							</div>
+							<div class="feed__events__item__name">Идеальный SDK для Android приложений: как выбрать и существует ли?</div>
+							<div class="feed__events__item__condition-wrapper">
+								<div>Сегодня</div>
+								<div>Онлайн</div>
+								<div>Бесплатно</div>
+							</div>
+						</article>
+						<article class="feed__events__item">
+							<div class="feed__events__item__owner">
+								<div class="feed__events__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__events__item__owner__name">Библиотека разработчика</div>
+								<div class="feed__events__item__owner__verif"></div>
+							</div>
+							<div class="feed__events__item__name">Идеальный SDK для Android приложений: как выбрать и существует ли?</div>
+							<div class="feed__events__item__condition-wrapper">
+								<div>Сегодня</div>
+								<div>Онлайн</div>
+								<div>Бесплатно</div>
+							</div>
+						</article>
+						<article class="feed__events__item">
+							<div class="feed__events__item__owner">
+								<div class="feed__events__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__events__item__owner__name">Библиотека разработчика</div>
+								<div class="feed__events__item__owner__verif"></div>
+							</div>
+							<div class="feed__events__item__name">Идеальный SDK для Android приложений: как выбрать и существует ли?</div>
+							<div class="feed__events__item__condition-wrapper">
+								<div>Сегодня</div>
+								<div>Онлайн</div>
+								<div>Бесплатно</div>
+							</div>
+						</article>
+						<article class="feed__events__item">
+							<div class="feed__events__item__owner">
+								<div class="feed__events__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__events__item__owner__name">Библиотека разработчика</div>
+								<div class="feed__events__item__owner__verif"></div>
+							</div>
+							<div class="feed__events__item__name">Идеальный SDK для Android приложений: как выбрать и существует ли?</div>
+							<div class="feed__events__item__condition-wrapper">
+								<div>Сегодня</div>
+								<div>Онлайн</div>
+								<div>Бесплатно</div>
+							</div>
+						</article>
+						<article class="feed__events__item">
+							<div class="feed__events__item__owner">
+								<div class="feed__events__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__events__item__owner__name">Библиотека разработчика</div>
+								<div class="feed__events__item__owner__verif"></div>
+							</div>
+							<div class="feed__events__item__name">Идеальный SDK для Android приложений: как выбрать и существует ли?</div>
+							<div class="feed__events__item__condition-wrapper">
+								<div>Сегодня</div>
+								<div>Онлайн</div>
+								<div>Бесплатно</div>
+							</div>
+						</article>
+						
+						<div class="feed__events__more">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12 6C10.4379 7.5621 8 10 8 10C8 10 5.5621 7.5621 4 6" stroke="#141416" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							Показать ещё</div>
+					</div>
+				</section>
+				<section class="feed__forum">
+					<div class="feed__forum__header feed__section__header">
+						<h3 class="title title_h3 feed__forum__header__title">На форуме<span> обсуждают</span></h3>
+						<div class="feed__forum__btn-wrapper">
+							<button class="btn btn_border-blue-transparent btn_small">Перейти<span> на форум</span></button>
+						</div>
+					</div>
+					<div class="feed__forum__container grid__feed__forum">
+						<a href="#" class="feed__forum__arrow"><img src="icons/general/forum/arrow.svg" alt=""></a>
+						<article class="feed__forum__item card card__forum">
+							<div class="feed__forum__owner__header">
+								<div class="feed__forum__owner__header__img"><img src="img/main/photo.jpg" alt="photo"></div>
+								<div class="feed__forum__owner__header__name">Виталий Пономарев</div>
+								<div class="feed__forum__owner__header__time">сегодня</div>
+							</div>
+							<a href="#">
+								<h5 class="title title_h5 feed__forum__item__title">Как поменять сериализованные данные в теле ответа Django REST FrameWork?</h5>
+							</a>
+							<div class="feed__forum__action">
+								<a href="#" class="card__action__views">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M17.7142 9.13484C18.1092 9.6515 18.1092 10.349 17.7142 10.8648C16.47 12.489 13.485 15.8332 9.99999 15.8332C6.51499 15.8332 3.52999 12.489 2.28582 10.8648C2.09364 10.6174 1.98932 10.3131 1.98932 9.99984C1.98932 9.68657 2.09364 9.38223 2.28582 9.13484C3.52999 7.51067 6.51499 4.1665 9.99999 4.1665C13.485 4.1665 16.47 7.51067 17.7142 9.13484V9.13484Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>5369</span>
+								</a>
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>64</span>
+								</a>
+							</div>
+						</article>
+						<article class="feed__forum__item card card__forum">
+							<div class="feed__forum__owner__header">
+								<div class="feed__forum__owner__header__img"><img src="img/main/photo.jpg" alt="photo"></div>
+								<div class="feed__forum__owner__header__name">Виталий Пономарев</div>
+								<div class="feed__forum__owner__header__time">сегодня</div>
+							</div>
+							<a href="#">
+								<h5 class="title title_h5 feed__forum__title">Как поменять сериализованные данные в теле ответа Django REST FrameWork?</h5>
+							</a>
+							<div class="feed__forum__action">
+								<a href="#" class="card__action__views">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M17.7142 9.13484C18.1092 9.6515 18.1092 10.349 17.7142 10.8648C16.47 12.489 13.485 15.8332 9.99999 15.8332C6.51499 15.8332 3.52999 12.489 2.28582 10.8648C2.09364 10.6174 1.98932 10.3131 1.98932 9.99984C1.98932 9.68657 2.09364 9.38223 2.28582 9.13484C3.52999 7.51067 6.51499 4.1665 9.99999 4.1665C13.485 4.1665 16.47 7.51067 17.7142 9.13484V9.13484Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>5369</span>
+								</a>
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>64</span>
+								</a>
+							</div>
+						</article>
+						<article class="feed__forum__item card card__forum">
+							<div class="feed__forum__owner__header">
+								<div class="feed__forum__owner__header__img"><img src="img/main/photo.jpg" alt="photo"></div>
+								<div class="feed__forum__owner__header__name">Виталий Пономарев</div>
+								<div class="feed__forum__owner__header__time">сегодня</div>
+							</div>
+							<a href="#">
+								<h5 class="title title_h5 feed__forum__title">Как поменять сериализованные данные в теле ответа Django REST FrameWork?</h5>
+							</a>
+							<div class="feed__forum__action">
+								<a href="#" class="card__action__views">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M17.7142 9.13484C18.1092 9.6515 18.1092 10.349 17.7142 10.8648C16.47 12.489 13.485 15.8332 9.99999 15.8332C6.51499 15.8332 3.52999 12.489 2.28582 10.8648C2.09364 10.6174 1.98932 10.3131 1.98932 9.99984C1.98932 9.68657 2.09364 9.38223 2.28582 9.13484C3.52999 7.51067 6.51499 4.1665 9.99999 4.1665C13.485 4.1665 16.47 7.51067 17.7142 9.13484V9.13484Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>5369</span>
+								</a>
+								<a href="#" class="card__action__comment">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span>64</span>
+								</a>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="feed__youtube">
+					<div class="feed__youtube__header feed__section__header">
+						<h3 class="title title_h3 feed__youtube__header__title">Наши ролики на Ютубе</h3>
+					</div>
+					<div class="feed__youtube__container grid__feed__youtube">
+						<a href="#" class="feed__youtube__arrow"><img src="icons/general/forum/arrow.svg" alt=""></a>
+						<div class="feed__youtube__item card card__article">
+							<a href="#">
+								<div class="feed__youtube__img">
+									<div class="feed__youtube__img__button">
+										<img src="icons/general/forum/arrow.svg" alt="">
+									</div>
+									<img src="icons/general/youtube.png" alt="">
+								</div>
+							</a>
+							<a href="#">
+								<h5 class="title title_h5 feed__youtube__title">Основы CSS // Frontend: принцип работы современного веба</h5>
+							</a>
+						</div>
+						<div class="feed__youtube__item card card__article">
+							<a href="#">
+								<div class="feed__youtube__img">
+									<div class="feed__youtube__img__button">
+										<img src="icons/general/forum/arrow.svg" alt="">
+									</div>
+									<img src="icons/general/youtube.png" alt="">
+								</div>
+							</a>
+							<a href="#">
+								<h5 class="title title_h5 feed__youtube__title">Основы CSS // Frontend: принцип работы современного веба</h5>
+							</a>
+						</div>
+						<div class="feed__youtube__item card card__article">
+							<a href="#">
+								<div class="feed__youtube__img">
+									<div class="feed__youtube__img__button">
+										<img src="icons/general/forum/arrow.svg" alt="">
+									</div>
+									<img src="icons/general/youtube.png" alt="">
+								</div>
+							</a>
+							<a href="#">
+								<h5 class="title title_h5 feed__youtube__title">Основы CSS // Frontend: принцип работы современного веба</h5>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="feed__blogs">
+					<div class="feed__blogs__header feed__section__header">
+						<h3 class="title title_h3 feed__blogs__header__title">Блоги компаний</h3>
+						<div class="feed__forum__btn-wrapper">
+							<button class="btn btn_border-blue-transparent btn_small">Все компании</button>
+						</div>
+					</div>
+					<div class="feed__blogs__container grid__feed__blogs">
+						<article class="card card__article">
+							<div class="card__article__img">
+								<img src="img/main/php.png" alt="php">
+							</div>
+							<div class="feed__blogs__item__owner">
+								<div class="feed__blogs__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__blogs__item__owner__name">Библиотека разработчика</div>
+							</div>
+							<h5 class="title title_h5 card__article__title feed__blogs__card__title">Распространенные алгоритмы и структуры данных в JavaScript: графы</h5>
+							<div class="card__action">
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+									<a href="#" class="card__action__comment">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<span>Обсудить</span>
+									</a>
+									<a href="#" class="card__action__bookmarks">
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>		
+									</a>
+								</div>
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+									<a href="#" class="card__action__rep_down">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<div class="card__action__rep-count">123</div>
+									<a href="#" class="card__action__rep_up">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</article>
+						<article class="card card__article">
+							<div class="card__article__img">
+								<img src="img/main/php.png" alt="php">
+							</div>
+							<div class="feed__blogs__item__owner">
+								<div class="feed__blogs__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__blogs__item__owner__name">Библиотека разработчика</div>
+							</div>
+							<h5 class="title title_h5 card__article__title feed__blogs__card__title">Распространенные алгоритмы и структуры данных в JavaScript: графы</h5>
+							<div class="card__action">
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+									<a href="#" class="card__action__comment">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<span>Обсудить</span>
+									</a>
+									<a href="#" class="card__action__bookmarks">
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>		
+									</a>
+								</div>
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+									<a href="#" class="card__action__rep_down">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<div class="card__action__rep-count">123</div>
+									<a href="#" class="card__action__rep_up">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</article>
+						<article class="card card__article">
+							<div class="card__article__img">
+								<img src="img/main/php.png" alt="php">
+							</div>
+							<div class="feed__blogs__item__owner">
+								<div class="feed__blogs__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__blogs__item__owner__name">Библиотека разработчика</div>
+							</div>
+							<h5 class="title title_h5 card__article__title feed__blogs__card__title">Распространенные алгоритмы и структуры данных в JavaScript: графы</h5>
+							<div class="card__action">
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+									<a href="#" class="card__action__comment">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<span>Обсудить</span>
+									</a>
+									<a href="#" class="card__action__bookmarks">
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>		
+									</a>
+								</div>
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+									<a href="#" class="card__action__rep_down">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<div class="card__action__rep-count">123</div>
+									<a href="#" class="card__action__rep_up">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</article>
+						<article class="card card__article">
+							<div class="card__article__img">
+								<img src="img/main/php.png" alt="php">
+							</div>
+							<div class="feed__blogs__item__owner">
+								<div class="feed__blogs__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__blogs__item__owner__name">Библиотека разработчика</div>
+							</div>
+							<h5 class="title title_h5 card__article__title feed__blogs__card__title">Распространенные алгоритмы и структуры данных в JavaScript: графы</h5>
+							<div class="card__action">
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+									<a href="#" class="card__action__comment">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<span>Обсудить</span>
+									</a>
+									<a href="#" class="card__action__bookmarks">
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>		
+									</a>
+								</div>
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+									<a href="#" class="card__action__rep_down">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<div class="card__action__rep-count">123</div>
+									<a href="#" class="card__action__rep_up">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</article>
+						<article class="card card__article">
+							<div class="card__article__img">
+								<img src="img/main/php.png" alt="php">
+							</div>
+							<div class="feed__blogs__item__owner">
+								<div class="feed__blogs__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__blogs__item__owner__name">Библиотека разработчика</div>
+							</div>
+							<h5 class="title title_h5 card__article__title feed__blogs__card__title">Распространенные алгоритмы и структуры данных в JavaScript: графы</h5>
+							<div class="card__action">
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+									<a href="#" class="card__action__comment">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<span>Обсудить</span>
+									</a>
+									<a href="#" class="card__action__bookmarks">
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>		
+									</a>
+								</div>
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+									<a href="#" class="card__action__rep_down">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<div class="card__action__rep-count">123</div>
+									<a href="#" class="card__action__rep_up">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</article>
+						<article class="card card__article">
+							<div class="card__article__img">
+								<img src="img/main/php.png" alt="php">
+							</div>
+							<div class="feed__blogs__item__owner">
+								<div class="feed__blogs__item__owner__img"><img src="icons/general/vacancies/company.png" alt=""></div>
+								<div class="feed__blogs__item__owner__name">Библиотека разработчика</div>
+							</div>
+							<h5 class="title title_h5 card__article__title feed__blogs__card__title">Распространенные алгоритмы и структуры данных в JavaScript: графы</h5>
+							<div class="card__action">
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_left">
+									<a href="#" class="card__action__comment">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6667 15.8333C14.8092 15.8333 16.3808 15.8333 17.3567 14.8567C18.3333 13.8808 18.3333 12.3092 18.3333 9.16667C18.3333 6.02417 18.3333 4.4525 17.3567 3.47667C16.3808 2.5 14.8092 2.5 11.6667 2.5H8.33334C5.19084 2.5 3.61917 2.5 2.64334 3.47667C1.66667 4.4525 1.66667 6.02417 1.66667 9.16667C1.66667 12.3092 1.66667 13.8808 2.64334 14.8567C3.1875 15.4017 3.91667 15.6425 5.00001 15.7483" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.6667 15.8333C10.6367 15.8333 9.50167 16.25 8.46584 16.7875C6.80084 17.6516 5.96834 18.0841 5.55834 17.8083C5.14834 17.5333 5.22584 16.6791 5.38167 14.9716L5.41667 14.5833" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<span>Обсудить</span>
+									</a>
+									<a href="#" class="card__action__bookmarks">
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.33334 3.16667V15.3217C1.33334 16.0633 2.23084 16.4358 2.75584 15.9108L8.00001 10.6667L13.2442 15.9108C13.7692 16.4358 14.6667 16.0642 14.6667 15.3217V3.16667C14.6667 2.72464 14.4911 2.30072 14.1785 1.98816C13.866 1.67559 13.442 1.5 13 1.5H3.00001C2.55798 1.5 2.13406 1.67559 1.8215 1.98816C1.50894 2.30072 1.33334 2.72464 1.33334 3.16667V3.16667Z" stroke="#9F9FA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>		
+									</a>
+								</div>
+								<div class="card__action__wrapper card__action__wrapper_p-mobile card__action__wrapper_right">
+									<a href="#" class="card__action__rep_down">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33334 9.5L12 16.1667L18.6667 9.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<div class="card__action__rep-count">123</div>
+									<a href="#" class="card__action__rep_up">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.33331 14.5L12 7.83331L18.6666 14.5" stroke="#C9C9CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
+				<div class="feed__more">
+					<button class="btn btn_large feed__more__btn">Показать ещё</button>
+					<div class="feed__more__wrapper">
+						<a href="#" class="btn btn_large btn_blue-transparent-2 btn_blue-transparent-2_active">1</a>
+						<a href="#" class="btn btn_large btn_blue-transparent-2">2</a>
+						<a href="#" class="btn btn_large btn_blue-transparent-2">3</a>
+						<img src="icons/general/feed/dot.svg" alt="">
+						<a href="#" class="btn btn_large btn_blue-transparent-2">204</a>
+						<img src="icons/general/feed/arrowright.svg" alt="">
+					</div>
+				</div>
+				//=include templates/base/footer.html
+			</div>
+		</section>
+		//=include templates/base/aside.html
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
