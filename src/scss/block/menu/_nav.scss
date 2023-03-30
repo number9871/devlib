@@ -1,0 +1,110 @@
+.navigation {
+    background-color: var(--bg-light-1);
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+    transition: all .4s;
+    &_active {
+        left: 0;
+    }
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+    &__close {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        width: 30px;
+        height: 40px;
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 30px;
+            height: 2px;
+            background-color: var(--text-light-1);
+            transform: translate(-50%, -50%) rotate(45deg);
+            transition: var(--hover-transition);
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 30px;
+            height: 2px;
+            background-color: var(--text-light-1);
+            transform: translate(-50%, -50%) rotate(-45deg);
+            transition: var(--hover-transition);
+        }
+        &:hover {
+            &::after, 
+            &::before {
+                background-color: var(--primary-blue-hover);
+            }
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        span {
+            color: var(--primary-blue-hover);
+        }
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a {
+            padding-left: 30px;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 36px;
+            transition: var(--hover-transition);
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                width: 10px;
+                height: 10px;
+                transform: translateY(-50%);
+                background-color: var(--text-light-1);
+                transition: var(--hover-transition);
+            }
+            &:hover { 
+                color: var(--primary-blue-hover);
+                background: var(--bg-light-2);
+                border-radius: var(--border-radius);
+                &::before {
+                    background-color: var(--primary-blue-hover);
+                    transform: translateY(-50%) rotate(-45deg);
+                }
+            }
+        }
+    }
+    &__overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100vh;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, .3);
+        transition: all .4s;
+        &_active {
+            width: 100vw;
+        }
+    }
+}

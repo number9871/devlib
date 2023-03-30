@@ -38,6 +38,28 @@ modalToggle('discussToggleOn', 'discuss', 'discussToggleOff', 'discuss__toggle_m
 modalToggle('moreSubscrBtn', 'moreSubscrModal', 'moreSubscrOverlay', 'card__modal_active', null, 'card__modal__close')
 modalToggle('moreSubsrBtnMobile', 'moreSubscrModal', 'moreSubscrOverlay', 'card__modal_active', null, 'card__modal__close')
 
+if (document.getElementById('nav')) {
+  let nav = document.getElementById('nav'),
+      overlay = document.getElementById('nav-overlay');
+  
+  document.getElementById('nav-btn-desktop').onclick = () => {
+      nav.classList.toggle('navigation_active');
+      overlay.classList.toggle('navigation__overlay_active');
+  };
+  document.getElementById('nav-btn-mobile').onclick = () => {
+      nav.classList.toggle('navigation_active');
+      overlay.classList.toggle('navigation__overlay_active');
+  };
+  document.getElementById('nav-overlay').onclick = () => {
+      nav.classList.toggle('navigation_active');
+      overlay.classList.toggle('navigation__overlay_active');
+  };
+  document.getElementById('nav-close').onclick = () => {
+      nav.classList.toggle('navigation_active');
+      overlay.classList.toggle('navigation__overlay_active');
+  };
+}
+
 
 let closeJoinModal = document.querySelector('[ref=close_join_modal]')
 

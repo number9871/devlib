@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    .navigation {
+        left: unset;
+        right: -400px;
+        &_active {
+            right: 0;
+        }
+        &__close {
+            left: unset;
+            right: 20px;
+        }
+        &__overlay {
+            left: 0;
+            right: unset;
+        }
+    }
+}

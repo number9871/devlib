@@ -16,14 +16,14 @@
     .menu {
         display: none;
     }
-    .header {
-        &__menu-toggle_desktop {
-            display: block;
-        }
-        &__logo {
-            margin-left: 24px;
-        }
-    }
+    // .header {
+    //     &__menu-toggle_desktop {
+    //         display: block;
+    //     }
+    //     &__logo {
+    //         margin-left: 24px;
+    //     }
+    // }
     .feed {
         order: -1;
     }
